@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"   content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Main CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Typography-->
+    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-POYwD7xcktv3gUeZO5s/9nUbRJG/WOmV6jfEGikMJu77LGYO8Rfs2X7URG822aum" crossorigin="anonymous">
+    <title>Venue</title>
+  </head>
+  <body>
+    <header class="contactShowcase">
+      <div class="homeMenu">
+        <a href="index.html" class="mainLogo">
+        <img src="img/Mix Logo.jpg">
+        </a>
+        <div class="navMenu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="menu.html">Menu</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="mainReservationBtn">
+          <a href="#">Reservations</a>
+        </div>
+      </div>
+    </header>
+    <div class="pageIndex">
+      <a href="index.html">Home /</a>
+      <a href="about.html">about us /</a>
+      <a href="menu.html">menu /</a>
+      <a href="blog.html">blog /</a>
+      <a href="contact.html">contact us</a>
+    </div>
+    <div class="contactInfoContainer">
+      <div class="contactText">
+        <h1>contact info</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste qui nobis ipsum? Nemo repellat expedita eveniet doloribus. Atque exercitationem delectus doloremque sed rerum eaque, magnam sapiente quibusdam distinctio laudantium necessitatibus provident adipisci laborum molestias, temporibus, fuga dignissimos.</p>
+        <h1 class="contactLogo" id="clicked">the mixologist</h1>
+        <h3 class="restaurant">restaurant</h3>
+      </div>
+      <div class="contactLinks">
+        <ul>
+          <li>
+            <h4>address</h4>
+            <p>502 cherokee st, St.Louis MO, 63101</p>
+          </li>
+          <li>
+            <h4>phone</h4>
+            <p>(314) 555-5555</p>
+          </li>
+          <li>
+            <h4>E-mail</h4>
+            <p>themixologist@gmail.com</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="maps"></div>
+    <div class="globalReservation">
+      <div class="reserveTitle">
+        <h3>plan ahead</h3>
+        <h1>make a reservation</h1>
+      </div>
+      <form class="reservationForm">
+        <input type="text" placeholder="Name" class="name">
+        <input type="text" placeholder="Date/Time" class="date">
+        <input type="text"placeholder="Party Size" class="partySize">
+        <input type="submit" value="Submit reservation" class="resSubmitBtn">
+      </form>
+    </div>
+    <footer class="globalFoot">
+      <div class="textContain">
+        <h1>the mixologist</h1>
+        <p class="copyright">Copyright &copy;2018 All rights reserved</p>
+      </div>
+      <div class="footerContact">
+        <ul>
+          <li>
+            <h4>address</h4>
+            <p>502 cherokee st, St. Louis MO, 63101</p>
+          </li>
+          <li>
+            <h4>phone</h4>
+            <p>(314)555-5555</p>
+          </li>
+          <li>
+            <h4>email</h4>
+            <p>themixologist@gmail.com</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl1sDMu4dUkv8dEcmAyE8pYhf4Z9bYZ1A&callback=initMap"
+    async defer></script>
+ 
+  </body>
+</html>

@@ -1,0 +1,794 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+.homeShowcase{
+  background:linear-gradient(to right, #323131af, #323131af), url(../img/bg_5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+.homeMenu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mainLogo img{
+  height: 160px;
+  width: 240px;
+  border-radius: 6px;
+  margin-left: 60px;
+}
+.navMenu{
+  margin-top: 40px;
+  margin-left: -60px;
+}
+.navMenu a{
+ font-size: 20px;
+ font-weight: lighter;
+ color: #d3c186;
+ text-decoration: none;
+ padding-left: 40px;
+}
+.mainReservationBtn{
+  margin-top: 40px;
+  margin-right: 60px;
+}
+.mainReservationBtn a{
+  font-size: 18px;
+  font-weight: lighter;
+  color: #d3c186;
+  border: 1px solid #d3c186;
+  border-radius: 4px;
+  padding: 10px 20px 10px 20px;
+}
+.innerQuote{
+  margin: 180px 0 0 60px;
+  text-align: center;
+}
+.innerQuote h3{
+  font-family: 'Allura', cursive;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #d3c186;
+  text-transform: capitalize;
+}
+.innerQuote h1{
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #d3c186;
+}
+/* something new section starts here */
+.somethingNewContain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.bartenderImg, .pintImg{
+  height: 380px;
+  width: 280px;
+  border-radius: 6px;
+}
+.somethingNew{
+  background-color: #fff;
+  margin-left: -40px;
+  height: 320px;
+  width: 500px;
+  z-index: 2;
+  border: 3px solid #d3c186;
+  border-radius: 6px;
+  box-shadow: 10px 10px 30px #50505062;
+  text-align: left;
+  padding: 10px;
+}
+.somethingNew h3{
+  font-family: 'Allura', cursive;
+  font-size: 26px;
+  font-weight: lighter;
+  color: #d3c186;
+  text-transform: capitalize;
+  padding-top: 20px;
+}
+.somethingNew h1{
+  font-size: 30px;
+  font-weight: lighter;
+  color: #303030;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+.soulFoodContain{
+  margin-top: 100px;
+  height: 56vh;
+}
+.foodDesc{
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  padding-top: 176px;
+}
+.foodDesc h3{
+  font-family: 'Allura', cursive;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #d3c186;
+  text-transform: capitalize;
+}
+.foodDesc h1{
+  font-size: 40px;
+  font-weight: lighter;
+  color: #d3c186;
+  text-transform: capitalize;
+}
+#videoBackground{
+  width: 100% !important;
+  height: 80vh;
+  object-fit: fill;
+  zoom: .7;
+}
+/* Signature Dish Starts here */
+.signatureContain{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.sigText{
+  height: 320px;
+  width: 500px;
+  margin-right: -40px;
+  background-color: #fff;
+  z-index: 2;
+  border: 3px solid #d3c186;
+  border-radius: 6px;
+  box-shadow: 10px 10px 30px #50505062;
+  text-align: left;
+  padding: 30px 0 0 30px;
+}
+.sigText h3{
+  font-family: 'Allura', cursive;
+  font-size: 26px;
+  font-weight: lighter;
+  color: #d3c186;
+  text-transform: capitalize;
+  padding-bottom: 6px;
+}
+.sigText h1{
+  font-size: 30px;
+  font-weight: lighter;
+  color: #303030;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+}
+/* Global Flex for the rating and price for Home page Signature Dish */
+.rating, .flexPrice{
+  display: flex;
+  flex-direction: row;
+}
+.fa-star{
+  color: #d3c186;
+  font-size: 14px;
+  padding-bottom: 6px;
+}
+.mealName{
+  font-size: 18px;
+  font-weight: lighter;
+  color: #303030;
+  text-transform: capitalize;
+  padding-bottom: 8px;
+}
+.price{
+  font-size: 18px;
+  font-weight: lighter;
+  color: #303030;
+  padding-left: 60px;
+}
+.ingredients{
+  text-transform: capitalize;
+  font-weight: lighter;
+  color: #5c5c5c;
+}
+.moreDish{
+  padding-top: 40px;
+}
+.moreDish a{
+  font-size: 18px;
+  font-weight: lighter;
+  color: #d3c186;
+  text-transform: capitalize;
+  border: 1px solid #d3c186;
+  border-radius: 6px;
+  padding: 10px 14px 10px 14px;
+}
+.filetphto img{
+  height: 380px;
+  width: 560px;
+  border-radius: 6px;
+}
+.menuBanner{
+  height: 16vh;
+  width: 1022px;
+  background-color: #211b06;
+  border-radius: 6px;
+  margin-top: 100px;
+  margin-left: 200px;
+  position: absolute;
+}
+.innerBorder{
+  height: 12vh;
+  width: 1002px;
+  border: 1px solid #d3c186;
+  border-radius: 6px;
+  margin-top: 16px;
+  margin-left: 10px;
+}
+.theMenu{
+  text-align: center;
+}
+.theMenu h3{
+  font-family: 'Allura', cursive;
+  font-size: 26px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: #d3c186;
+  background-color: #211b06;
+  width: 100px;
+  margin-top: -10px;
+  margin-left: 450px;
+}
+.theMenu h1{
+  font-size: 30px;
+  font-weight: lighter;
+  color: #d3c186;
+  text-transform: capitalize;
+}
+.fa-utensils{
+  font-size: 22px;
+  color: #d3c186;
+  margin-top: 14px;
+  background-color: #211b06;
+  width: 40px;
+}
+/* Menu Blocks Start Here */
+.menu{
+  width: 1022px;
+  height: 100vh;
+  margin-top: 220px;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* block one starts here */
+.block1{
+  width: 330px;
+  border: 1px solid #d3c18646;
+  border-radius: 6px;
+}
+#mainMeal{
+  margin-top: 82px;
+}
+.listContain{
+  padding: 30px 16px 30px 16px;
+}
+.mealType{
+  font-family: 'Allura', cursive;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #d3c186;
+  text-transform: capitalize;
+  text-align: center;
+  border: 1px solid #d3c186;
+  border-radius: 4px;
+  width: 110px;
+  padding: 10px 12px 10px 12px;
+}
+/* this is where the global will start for all the typography inside the Li*/
+.listContain li{
+  padding-top: 34px;
+}
+.mealName{
+  font-size: 18px;
+  font-weight: lighter;
+  color: #303030;
+  width: 280px;
+}
+/* Global Make a reservation Section*/
+.globalReservation{
+  background: linear-gradient(to right, #26252574, #26252574), url(../img/bg_6.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+  margin-top: 100px;
+}
+.reserveTitle{
+  text-align: center;
+  padding-top: 150px;
+}
+.reserveTitle h3{
+  font-family: 'Allura', cursive;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #d3c186;
+}
+.reserveTitle h1{
+  font-size: 40px;
+  font-weight: lighter;
+  color: #d3c186;
+  text-transform: capitalize;
+}
+/* Form Starts Here */
+.reservationForm{
+  margin-top: 40px;
+  margin-left: 300px;
+}
+/* Name Date and Party Size Input Globals */
+.name, .date, .partySize{
+  height: 40px;
+  width: 250px;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #fff;
+  background: transparent;
+  text-align: center;
+  border: 2px solid #d3c186;
+  margin-left: 15px;
+}
+/* Place Holders For each Input type */
+.name::placeholder{
+  color: #cdcbc5;
+  font-weight: lighter;
+}
+/* date and time */
+.date::placeholder{
+  color: #cdcbc5;
+  font-weight: lighter;
+}
+/* Party Size */
+.partySize::placeholder{
+  color: #cecbc5;
+  font-weight: lighter;
+}
+/* Reservation Submit Button */
+.resSubmitBtn{
+  font-size: 18px;
+  color: #cdcbc5;
+  text-transform: capitalize;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  margin-left: 312px;
+  margin-top: 40px;
+  background: transparent;
+  border: 2px solid #d3c186;
+  padding: 12px 22px 12px 22px;
+}
+/* Footer Starts Here */
+.globalFoot{
+  height: 30vh;
+  width: 100%;
+  background-color: #242424;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 90px;
+}
+.textContain h1{
+  font-size: 40px;
+  font-weight: lighter;
+  color: #e3d094;
+  text-transform: capitalize;
+}
+.footerDesc p{
+  font-weight: lighter;
+  font-size: 18px;
+  color: #f2f2f27b;
+  width: 500px;
+}
+.footerContact li{
+  display: flex;
+  padding-top: 10px;
+}
+.footerContact li:nth-child(1){
+  padding-top: 0;
+}
+.footerContact li h4{
+  font-size: 18px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: #d3c186;
+  padding-right: 10px;
+}
+.footerContact li p{
+  font-weight: lighter;
+  color: #e7e7e7;
+}
+/* ABOUT US PAGE STARTS HERE */
+.aboutShowcase{
+  background:linear-gradient(to right, #323131af, #323131af), url(../img/about.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100%;
+}
+.aboutUs{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 100px;
+}
+.imgContain img{
+  height: 380px;
+  width: 500px;
+  border-radius: 6px;
+}
+.aboutTextContainer{
+  height:320px;
+  width: 500px;
+  border: 2px solid #d3c186;
+  border-radius: 6px;
+  box-shadow: 10px 10px 30px #50505062;
+  margin-left: -260px;
+  background-color: #fff;
+  padding: 10px;
+}
+.aboutTextContainer h3{
+  font-family: 'Allura', cursive;
+  font-size: 26px;
+  font-weight: lighter;
+  color: #d3c186;
+  text-transform: capitalize;
+  padding-top: 20px;
+}
+.aboutTextContainer h1{
+  font-size: 30px;
+  font-weight: lighter;
+  color: #303030;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+/* about our chefs*/
+.chefsIntro{
+  margin-top: 100px;
+}
+.introText{
+  margin-left: 140px;
+}
+.introText h3{
+  font-family: 'Allura', cursive;
+  font-size: 26px;
+  font-weight: lighter;
+  color: #d3c186;
+  text-transform: capitalize;
+}
+.introText h1{
+  font-size: 40px;
+  font-weight: lighter;
+  color: #303030;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+.aboutourChefs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 40px;
+}
+.aboutourChefs p{
+  width: 500px;
+}
+.chefBlock{
+  height: 60vh;
+  width: 100%;
+}
+.chefImage img{
+  height: 360px;
+  width: 360px;
+  margin-top: 60px;
+  margin-left: 530px;
+  border-radius: 20px;
+  position: absolute;
+}
+.testContain{
+  height: 60vh;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: -100px;
+  text-align: center;
+}
+.testimonialTitle{
+  padding-top: 100px;
+}
+.testimonialTitle h3{
+  font-family: 'Allura', cursive;
+  font-size: 26px;
+  font-weight: lighter;
+  color: #e3d094;
+  text-transform: capitalize;
+}
+.testimonialTitle h1{
+  font-size: 40px;
+  font-weight: lighter;
+  color: #303030;
+  text-transform: capitalize;
+  padding-bottom: 40px;
+}
+.fa-quote-left{
+  font-size: 20px;
+  color: #e3d094;
+  padding-bottom: 30px;
+}
+.testimonial{
+  width: 740px;
+  margin-left: 340px;
+}
+.testimonial p{
+  font-size: 18px;
+  font-weight: lighter;
+  color: #303030;
+}
+.testimonial h4{
+  font-size: 20px;
+  font-weight: lighter;
+  color: #e3d094;
+  text-transform: capitalize;
+  padding-top: 20px;
+}
+/* Services Page Starts Here */
+.menuShowcase{
+  background:linear-gradient(to right, #323131af, #323131af), url(../img/menubg.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100%;
+}
+.menuDiscovery{
+  margin-top: 100px;
+}
+.menuDiscovery h3{
+  font-family: 'Allura', cursive;
+  font-size: 26px;
+  font-weight: lighter;
+  color: #d3c186;
+  text-transform: capitalize;
+  padding-left: 140px;
+}
+.menuDiscovery h1{
+  font-size: 40px;
+  font-weight: lighter;
+  color: #303030;
+  text-transform: capitalize;
+  padding-left: 140px;
+  padding-bottom: 30px;
+}
+.discoverDesc{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.discoverDesc p{
+  width: 500px;
+}
+/* Menu Page Menu starts here */
+.imgRow{
+  width: 1022px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 180px;
+  margin-left: 200px;
+}
+.imgRow img{
+  height: 380px;
+  width: 330px;
+  border-radius: 6px;
+}
+#menuPageMenu{
+  margin-top: -40px;
+}
+/* Menu Page Signature Dishes Start Here*/
+.signatureDishes{
+  width: 1022x;
+  border-top: 2px solid #d3c186;
+  margin-top: 100px;
+}
+.signatureText{
+  padding-top: 60px;
+  padding-left: 140px;
+}
+.signatureText h3{
+  font-family: 'Allura', cursive;
+  font-size: 26px;
+  font-weight: lighter;
+  color: #d3c186;
+  text-transform: capitalize;
+}
+.signatureText h1{
+  font-size: 40px;
+  font-weight: lighter;
+  color: #303030;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+.signatureColumn{
+  width: 1022px;
+  margin-top: 70px;
+  margin-left: 200px;
+}
+.dish{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexPrice h3{
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #303030;
+}
+.flexPrice p{
+  margin-left: 60px;
+}
+.sigPhoto img{
+  height: 280px;
+  width: 480px;
+  border-radius: 6px;
+}
+/* dish two padding*/
+#dishTwo, #dishThree{
+  padding-top: 80px;
+}
+/* Blog starts here */
+/* Contact Us starts here */
+.contactShowcase{
+  background:linear-gradient(to right, #323131af, #323131af), url(../img/contactbg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100%;
+}
+.contactInfoContainer{
+  width: 1022px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+.contactText{
+  width: 500px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.contactText h1{
+  font-size: 36px;
+  font-weight: lighter;
+  color: #303030;
+  text-transform: capitalize;
+}
+.contactText p{
+  font-weight: lighter;
+  color: #303030;
+  padding-top: 30px;
+}
+.contactLogo{
+  font-size: 40px;
+  font-weight: lighter;
+  color: #303030;
+  text-transform: capitalize;
+  padding-top: 40px;
+}
+.restaurant{
+  font-size: 20px;
+  font-weight: lighter;
+  color: #505050;
+  text-transform: capitalize;
+  letter-spacing: 15px;
+}
+.contactLinks{
+  width: 400px;
+  height: 200px;
+  border: 3px solid #e3d094;
+  border-radius: 6px;
+  padding: 12px 40px 0 40px;
+}
+.contactLinks li{
+  display: flex;
+  padding-top: 30px;
+}
+.contactLinks li h4{
+  padding-right: 10px;
+}
+/* google maps*/
+#maps{
+  height: 400px;
+  width: 1022px;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+/* Blog Starts Here */
+.blogShowcase{
+  background:linear-gradient(to right, #323131af, #323131af), url(../img/blogbg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100%;
+}
+.blogContainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#row{
+  width: 500px;
+}
+.rowTwo{
+  padding-top: 200px;
+  padding-bottom: 110px;
+}
+.blog{
+  height: 400px;
+  width: 500px;
+}
+#post2{
+  padding-top: 220px;
+}
+#post3{
+  margin-top: 440px;
+}
+.postDate{
+  font-family: 'Allura', cursive;
+  font-size: 20px;
+  background-color: #fff;
+  border: 2px solid #e3d094;
+  border-radius: 4px;
+  width: 160px;
+  padding: 8px 16px 8px 16px;
+  margin-bottom: -20px;
+  margin-left: 20px;
+}
+.postImage img{
+  height: 300px;
+  width: 500px;
+  position: relative;
+  z-index: -2;
+}
+.postTitle{
+  font-size: 28px;
+  font-weight: lighter;
+  color: #303030;
+  text-transform: capitalize;
+  width: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.author{
+  font-size: 16px;
+  font-weight: lighter;
+  color: #ffffff;
+  background-color: #e3d094;
+  padding: 8px 16px 8px 16px;
+  width: 312px;
+  margin-bottom: 20px;
+}
+.postOverview{
+  font-weight: lighter;
+  line-height: 30px;
+}
