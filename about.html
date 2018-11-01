@@ -26,7 +26,7 @@
           <a href="contact.html">Contact Us</a>
         </div>
         <div class="mainReservationBtn">
-          <a href="#">Reservations</a>
+          <a href="#reservationForm">Reservations</a>
         </div>
       </div>
     </header>
@@ -41,24 +41,68 @@
       <div class="aboutTextContainer">
         <h3>something about</h3>
         <h1>the mixologist</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, odit nihil. Architecto, eveniet unde! Eos aperiam earum nemo laudantium? Voluptatum, explicabo necessitatibus culpa consequatur provident et quam, perferendis voluptatem laboriosam sit dolores facere laborum doloribus veritatis dicta! Eos blanditiis repellat aut rerum nemo ea veritatis vitae, optio pariatur sit iusto? Quidem, tempora?</p>
+        <p>The Mixologist Restaurant was founded by the Culver family in 1984, which eventually branched out to more than 300 franchised restaurants all over the US. The Mixologist is well-known for its Filet Mignon, which made the restaurant extremely famous. They also have other items which include salads, sandwiches, desserts, etc.</p>
       </div>
     </section>
-    <div class="chefsIntro">
-      <div class="introText">
-        <h3>we have</h3>
-        <h1>the best chef</h1>
+    <div class="chefWrapper">
+      <div class="chefsIntro">
+        <div class="introText">
+          <h3>we have</h3>
+          <h1>the best chefs</h1>
+        </div>
+        <div class="aboutourChefs">
+          <p>With 30 years between the three, our chefs Dave Johnson, Carie Bates, and Andrew Morgan have been passionate about cooking and delivering only the best meals to our customers. Dave, our head Chef is a no nonsense chef, every dish is inspected and given the Chefs OK by him.</p>
+          <p>If there’s one thing you need to know about our chefs, it’s this: They want to hear from you. If you have a question, a comment, a suggestion or a critique, let them know. They make a point of making themselves available in the dining halls, so feel free to walk right up and chat.</p>
+        </div>
       </div>
-      <div class="aboutourChefs">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam facere laudantium mollitia sequi enim non commodi earum consectetur eligendi. Incidunt sint eaque provident ducimus ipsam quas ipsum rem vitae accusantium quasi laboriosam quae, nulla voluptatem nesciunt perferendis autem doloribus aliquam qui nihil architecto pariatur obcaecati?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam facere laudantium mollitia sequi enim non commodi earum consectetur eligendi. Incidunt sint eaque provident ducimus ipsam quas ipsum rem vitae accusantium quasi laboriosam quae, nulla voluptatem nesciunt perferendis autem doloribus aliquam qui nihil architecto pariatur obcaecati?</p>
+      <div class="chefBlock">
+        <div id="chefRow">
+          <div id="imgWrapper">
+            <img src="img/chef 2.jpg" id="andrew">
+            <div class="backLayer"></div>
+            <div class="miniBio">
+              <div class="miniText">
+                <h3 class="chefsName">andrew morgan</h3>
+                <p class="chefTitle">Su Chef</p>
+                <h4 class="senority">6 years</h4>
+              </div>
+            </div>
+          </div>
+          <div id="imgWrapper">
+              <img src="img/stock1.jpeg" id="dave">
+              <div class="backLayer"></div>
+              <div class="miniBio">
+                <div class="miniText">
+                  <h3 class="chefsName">andrew morgan</h3>
+                  <p class="chefTitle">Su Chef</p>
+                  <h4 class="senority">6 years</h4>
+                </div>
+              </div>
+            </div>
+          <div id="imgWrapper">
+            <img src="img/stock2.jpeg">
+          </div>
+        </div>
       </div>
+      <!--Andrew Modal Starts Here-->
+      <div class="modalContain">
+        <div id="andrewBio">
+          <div class="closeBtn">
+            <p id="exitModal">&times;</p>
+          </div>
+          <span class="bioThumbnail">
+            <img src="img/chef 2.jpg">
+          </span>
+          <div class="bioTitle">
+            <h3 class="bioName">andrew morgan</h3>
+            <p class="profession">Su Chef</p>
+            <p class="professionDesc">
+                Chef Matt Zatirka has cooked for some of the largest gatherings in St. Louis. At the Busch Stadium, Cardinals fans had a taste of his cuisine during the games, he catered food to baseball fans in the suites and Press Box, and even developed an appreciation for hot dogs. Now he creates memorable dining experiences at the Mixologist Restaurant for everyone to enjoy every day.
+            </p>
+          </div>
+        </div>
     </div>
-    <div class="chefBlock">
-      <div class="chefImage">
-        <img src="img/chef 2.jpg">
-      </div>
-    </div>
+    <!--Testimonial Section Starts Here-->
     <div class="testContain">
       <div class="testimonialTitle">
         <h3>what they say</h3>
@@ -77,13 +121,14 @@
           <h3>plan ahead</h3>
           <h1>make a reservation</h1>
         </div>
-        <form class="reservationForm">
-          <input type="text" placeholder="Name" class="name">
-          <input type="text" placeholder="Date/Time" class="date">
-          <input type="text"placeholder="Party Size" class="partySize">
-          <input type="submit" value="Submit reservation" class="resSubmitBtn">
+        <form name="newForm" id="reservationForm">
+          <input type="text" placeholder="Name" id="name"
+          name="firstLast">
+          <input type="text" placeholder="Date/Time" id="date" name="dateTime">
+          <input type="text"placeholder="Party Size" id="partySize">
+          <input type="submit" value="Submit Reservation" class="resSubmitBtn" id="submitBtn">
         </form>
-      </div>
+    </div>
       <footer class="globalFoot">
         <div class="textContain">
           <h1>the mixologist</h1>
@@ -106,5 +151,6 @@
           </ul>
         </div>
       </footer>
+      <script src="app.js"></script>
   </body>
 </html>  

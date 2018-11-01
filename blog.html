@@ -26,7 +26,7 @@
           <a href="contact.html">Contact Us</a>
         </div>
         <div class="mainReservationBtn">
-          <a href="#">Reservations</a>
+          <a href="#reservationForm">Reservations</a>
         </div>
       </div>
     </header>
@@ -106,12 +106,13 @@
           <h3>plan ahead</h3>
           <h1>make a reservation</h1>
         </div>
-        <form class="reservationForm">
-          <input type="text" placeholder="Name" class="name">
-          <input type="text" placeholder="Date/Time" class="date">
-          <input type="text"placeholder="Party Size" class="partySize">
-          <input type="submit" value="Submit reservation" class="resSubmitBtn">
-        </form>
+        <form name="newForm" id="reservationForm">
+            <input type="text" placeholder="Name" id="name"
+            name="firstLast">
+            <input type="text" placeholder="Date/Time" id="date" name="dateTime">
+            <input type="text"placeholder="Party Size" id="partySize">
+            <input type="submit" value="Submit Reservation" class="resSubmitBtn" id="submitBtn">
+          </form>
       </div>
       <footer class="globalFoot">
         <div class="textContain">
@@ -135,5 +136,6 @@
           </ul>
         </div>
       </footer>
+      <script src="app.js"></script>
   </body>
 </html>  

@@ -6,7 +6,7 @@
   list-style-type: none;
 }
 .homeShowcase{
-  background:linear-gradient(to right, #323131af, #323131af), url(../img/bg_5.jpg);
+  background:linear-gradient(to right, #26252574, #26252574), url(../img/bg_5.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,9 +71,9 @@
   align-items: center;
   margin-top: 100px;
 }
-.bartenderImg, .pintImg{
+.bartenderImg, .salmonImg{
   height: 380px;
-  width: 280px;
+  width: 310px;
   border-radius: 6px;
 }
 .somethingNew{
@@ -86,7 +86,7 @@
   border-radius: 6px;
   box-shadow: 10px 10px 30px #50505062;
   text-align: left;
-  padding: 10px;
+  padding: 10px 10px 10px 30px;
 }
 .somethingNew h3{
   font-family: 'Allura', cursive;
@@ -94,7 +94,7 @@
   font-weight: lighter;
   color: #d3c186;
   text-transform: capitalize;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 .somethingNew h1{
   font-size: 30px;
@@ -102,6 +102,11 @@
   color: #303030;
   text-transform: capitalize;
   padding-bottom: 30px;
+}
+.somethingNew p{
+  font-weight: lighter;
+  color: #303030;
+  width: 400px;
 }
 .soulFoodContain{
   margin-top: 100px;
@@ -210,7 +215,7 @@
 }
 .filetphto img{
   height: 380px;
-  width: 560px;
+  width: 600px;
   border-radius: 6px;
 }
 .menuBanner{
@@ -274,8 +279,12 @@
   border: 1px solid #d3c18646;
   border-radius: 6px;
 }
+#starters{
+  height: 602px;
+  margin-top: 7px;
+}
 #mainMeal{
-  margin-top: 82px;
+  margin-top: 108px;
 }
 .listContain{
   padding: 30px 16px 30px 16px;
@@ -328,12 +337,12 @@
   text-transform: capitalize;
 }
 /* Form Starts Here */
-.reservationForm{
+#reservationForm{
   margin-top: 40px;
   margin-left: 300px;
 }
 /* Name Date and Party Size Input Globals */
-.name, .date, .partySize{
+#name, #date, #partySize{
   height: 40px;
   width: 250px;
   font-size: 18px;
@@ -345,17 +354,17 @@
   margin-left: 15px;
 }
 /* Place Holders For each Input type */
-.name::placeholder{
+#name::placeholder{
   color: #cdcbc5;
   font-weight: lighter;
 }
 /* date and time */
-.date::placeholder{
+#date::placeholder{
   color: #cdcbc5;
   font-weight: lighter;
 }
 /* Party Size */
-.partySize::placeholder{
+#partySize::placeholder{
   color: #cecbc5;
   font-weight: lighter;
 }
@@ -415,7 +424,7 @@
 }
 /* ABOUT US PAGE STARTS HERE */
 .aboutShowcase{
-  background:linear-gradient(to right, #323131af, #323131af), url(../img/about.jpg);
+  background:linear-gradient(to right, #26252574, #26252574), url(../img/aboutBg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -441,7 +450,7 @@
   box-shadow: 10px 10px 30px #50505062;
   margin-left: -260px;
   background-color: #fff;
-  padding: 10px;
+  padding: 10px 10px 10px 30px;
 }
 .aboutTextContainer h3{
   font-family: 'Allura', cursive;
@@ -449,7 +458,7 @@
   font-weight: lighter;
   color: #d3c186;
   text-transform: capitalize;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .aboutTextContainer h1{
   font-size: 30px;
@@ -457,6 +466,11 @@
   color: #303030;
   text-transform: capitalize;
   padding-bottom: 30px;
+}
+.aboutTextContainer p{
+  font-weight: lighter;
+  color: #303030;
+  width: 400px;
 }
 /* about our chefs*/
 .chefsIntro{
@@ -487,25 +501,131 @@
   padding-top: 40px;
 }
 .aboutourChefs p{
+  font-size: 18px;
   width: 500px;
+  line-height: 22px;
 }
 .chefBlock{
   height: 60vh;
   width: 100%;
 }
-.chefImage img{
-  height: 360px;
-  width: 360px;
+#chefRow{
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 60px;
-  margin-left: 530px;
-  border-radius: 20px;
-  position: absolute;
+  margin-left: 150px;
 }
+#imgWrapper{
+  height: 370px;
+  width: 340px;
+  border-radius: 4px;
+  transition: 1s;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 8px 8px 30px #3f3f3f7c;
+}
+#imgWrapper img{
+  height: 370px;
+  width: 340px;
+}
+.modalContain{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.backLayer{
+  height: 370px;
+  width: 340px;
+  position: absolute;
+  margin-top: -373px;
+  background-color: #26252535;
+}
+/* Chef Mini Bio is Here */
+.miniBio{
+  padding-top: 240px;
+  position: relative;
+  text-align: center;
+  text-align: center;
+  height: 370px;
+  width: 340px;
+  transition: .5s;
+}
+.chefsName{
+  font-size: 30px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+/* Chef Bio Starts Here */
+  #andrewBio{
+    display: none;
+    height: 500px;
+    width: 800px;
+    background-color: #e9e9e9;
+    border-radius: 6px;
+    box-shadow: 10px 10px 40px #3c3c3c5a;
+    margin-top: 100px;
+    margin-left: 300px;
+  }
+  .closeBtn{
+    padding-top: 10px;
+    padding-left: 60px;
+  }
+  .closeBtn p{
+    font-size: 36px;
+    color: #e3d094;
+    cursor: pointer;
+    width: 10px;
+  }
+  .bioThumbnail img{
+    height: 240px;
+    width: 400px;
+    margin-top: -20px;
+    margin-left: 200px;
+    border-radius: 4px;
+  }
+  .bioTitle{
+    text-align: center;
+  }
+  .bioName{
+    font-size: 30px;
+    font-weight: lighter;
+    color: #303030;
+    text-transform: capitalize;
+  }
+  .profession{
+    font-family: 'Allura', curesive;
+    font-size: 26px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: #e3d094;
+
+  }
+  .professionDesc{
+    font-size: 18px;
+    font-weight: lighter;
+
+    width: 506px;
+    margin-left: 146px;
+  }
+/* Testimonials Start Here */
 .testContain{
+  background:linear-gradient(to right, #26252574, #26252574), url(../img/testBG.jpg);
+  background-size: cover;
+  background-position: center;
   height: 60vh;
   width: 100%;
   margin-top: 100px;
-  margin-bottom: -100px;
+  margin-bottom: 140px;
   text-align: center;
 }
 .testimonialTitle{
@@ -521,7 +641,7 @@
 .testimonialTitle h1{
   font-size: 40px;
   font-weight: lighter;
-  color: #303030;
+  color: #e7e7e7;
   text-transform: capitalize;
   padding-bottom: 40px;
 }
@@ -537,7 +657,7 @@
 .testimonial p{
   font-size: 18px;
   font-weight: lighter;
-  color: #303030;
+  color: #e7e7e7;
 }
 .testimonial h4{
   font-size: 20px;
@@ -548,7 +668,7 @@
 }
 /* Services Page Starts Here */
 .menuShowcase{
-  background:linear-gradient(to right, #323131af, #323131af), url(../img/menubg.jpg);
+  background:linear-gradient(to right, #26252574, #26252574), url(../img/menubg.jpg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -591,6 +711,7 @@
   align-items: center;
   margin-top: 180px;
   margin-left: 200px;
+  margin-bottom: -260px;
 }
 .imgRow img{
   height: 380px;
@@ -650,77 +771,6 @@
 /* dish two padding*/
 #dishTwo, #dishThree{
   padding-top: 80px;
-}
-/* Blog starts here */
-/* Contact Us starts here */
-.contactShowcase{
-  background:linear-gradient(to right, #323131af, #323131af), url(../img/contactbg.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 60vh;
-  width: 100%;
-}
-.contactInfoContainer{
-  width: 1022px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 100px;
-  margin-left: 200px;
-}
-.contactText{
-  width: 500px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.contactText h1{
-  font-size: 36px;
-  font-weight: lighter;
-  color: #303030;
-  text-transform: capitalize;
-}
-.contactText p{
-  font-weight: lighter;
-  color: #303030;
-  padding-top: 30px;
-}
-.contactLogo{
-  font-size: 40px;
-  font-weight: lighter;
-  color: #303030;
-  text-transform: capitalize;
-  padding-top: 40px;
-}
-.restaurant{
-  font-size: 20px;
-  font-weight: lighter;
-  color: #505050;
-  text-transform: capitalize;
-  letter-spacing: 15px;
-}
-.contactLinks{
-  width: 400px;
-  height: 200px;
-  border: 3px solid #e3d094;
-  border-radius: 6px;
-  padding: 12px 40px 0 40px;
-}
-.contactLinks li{
-  display: flex;
-  padding-top: 30px;
-}
-.contactLinks li h4{
-  padding-right: 10px;
-}
-/* google maps*/
-#maps{
-  height: 400px;
-  width: 1022px;
-  margin-top: 100px;
-  margin-left: 200px;
 }
 /* Blog Starts Here */
 .blogShowcase{
@@ -791,4 +841,74 @@
 .postOverview{
   font-weight: lighter;
   line-height: 30px;
+}
+/* Contact Us starts here */
+.contactShowcase{
+  background:linear-gradient(to right, #26252574, #26252574), url(../img/contactbg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100%;
+}
+.contactInfoContainer{
+  width: 1022px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+.contactText{
+  width: 500px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.contactText h1{
+  font-size: 36px;
+  font-weight: lighter;
+  color: #303030;
+  text-transform: capitalize;
+}
+.contactText p{
+  font-weight: lighter;
+  color: #303030;
+  padding-top: 30px;
+}
+.contactLogo{
+  font-size: 40px;
+  font-weight: lighter;
+  color: #303030;
+  text-transform: capitalize;
+  padding-top: 40px;
+}
+.restaurant{
+  font-size: 20px;
+  font-weight: lighter;
+  color: #505050;
+  text-transform: capitalize;
+  letter-spacing: 15px;
+}
+.contactLinks{
+  width: 400px;
+  height: 200px;
+  border: 3px solid #e3d094;
+  border-radius: 6px;
+  padding: 12px 40px 0 40px;
+}
+.contactLinks li{
+  display: flex;
+  padding-top: 30px;
+}
+.contactLinks li h4{
+  padding-right: 10px;
+}
+/* google maps*/
+#maps{
+  height: 400px;
+  width: 1022px;
+  margin-top: 100px;
+  margin-left: 200px;
 }
