@@ -1050,7 +1050,6 @@ body{
   }
   /* Savory Food Video Starts Here */
   #videBackground{
-    height: 60vh;
     zoom: 0;
   }
   .foodDesc{

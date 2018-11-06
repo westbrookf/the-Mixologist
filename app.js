@@ -17,11 +17,12 @@ function validateForm() {
  return true; 
 }
 //Home Page
-let openNav = document.getElementById("openNav");
+let Nav = document.querySelector(".flexBars");
 let closeNav = document.getElementById("hideIcon");
 let menu = document.querySelector(".homeMenu");
 
-openNav.addEventListener("click", viewNav);
+
+Nav.addEventListener("click", viewNav);
 closeNav.addEventListener("click", exitNav);
 
 function viewNav(){
