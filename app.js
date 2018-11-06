@@ -34,19 +34,6 @@ function exitNav(){
   menu.style.display = "none";
   openNav.style.display = "block";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 //About Us page 
 // Mouse Over To show Chefs Mini Bio
 let andrew = document.getElementById("andrew");
