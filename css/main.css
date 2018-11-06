@@ -30,6 +30,9 @@ body{
   height: 100vh;
   width: 100%;
 }
+#openNav{
+  display: none;
+}
 .homeMenu{
   display: flex;
   flex-direction: row;
@@ -979,7 +982,7 @@ body{
     padding-top: 40px;
     height: 140px;
     width: 140px;
-    margin-left: 30px;
+    margin-left: 0px;
   }
   .navMenu{
     display: flex;
@@ -997,12 +1000,16 @@ body{
   .homeShowcase{
     height: 60vh;
   }
-  .flexBars{
+  #openNav{
     display: flex;
     flex-direction: column;
     float: right;
     margin-top: 10px;
     cursor: pointer;
+  }
+  .flexBars{
+    height: 30px;
+
   }
   .bars{
     height: 6px;
@@ -1013,12 +1020,11 @@ body{
     margin-right: 30px;
   }
   .times{
-    font-size: 20px;
+    font-size: 30px;
     color: #e3d194;
     position: inherit;
-    margin-right: 30px;
-    margin-top: 10px;
-    margin-left: 30px;
+    margin-top: -14px;
+    margin-right: 140px;
     cursor: pointer;
   }
   .innerQuote{
@@ -1034,7 +1040,7 @@ body{
   }
   .mainReservationBtn{
     width: 300px;
-    margin-left: 34px;
+    float: right;
   }
   /* Something New Section Starts Here*/
   .sideImgs img{

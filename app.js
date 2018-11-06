@@ -16,19 +16,25 @@ function validateForm() {
   }
  return true; 
 }
-//Home Page
-let Nav = document.querySelector(".flexBars");
+let navOpen = document.querySelector("#openNav");
 let closeNav = document.getElementById("hideIcon");
 let menu = document.querySelector(".homeMenu");
+window.onload
 
 
-Nav.addEventListener("click", viewNav);
-closeNav.addEventListener("click", exitNav);
+if(navOpen){
+  navOpen.addEventListener ("click", viewNav);
+}
+if(closeNav){
+  closeNav.addEventListener ("click", exitNav);
+}
 
 function viewNav(){
-  menu.style.display = "block";
-  menu.style.opacity = "1";
-  openNav.style.display = "none";
+  if (menu.style.display = "none"){
+    menu.style.display = "flex";
+    menu.style.opacity = "1";
+    navOpen.style.display = "none";
+  }return false;
 }
 
 function exitNav(){
@@ -37,25 +43,36 @@ function exitNav(){
 }
 //About Us page 
 // Mouse Over To show Chefs Mini Bio
-let andrew = document.getElementById("andrew");
+let andrew = document.getElementById("drew");
 let dave = document.getElementById("dave");
 let carie = document.getElementById("carie");
 
-andrew.addEventListener("mouseover", shrtBio);
-dave.addEventListener("mouseover", shrtBio);
-carie.addEventListener("mouseover", shrtBio);
 
 
+if(andrew){
+  andrew.addEventListener ("mouseover", shrtBio);
+}
+if(dave){
+  dave.addEventListener ("mouseover", shrtBio);
+}
+if(carie){
+  carie.addEventListener ("mouseover", shrtBio);
+}
 function shrtBio(){
   const picId = this.attributes["data-text"].value;
   const pic = document.getElementById(picId);
   pic.style.marginTop = "-190px";  
 }
 // Mouse out To Hide Mini Bio
-andrew.addEventListener("mouseout", clseMini);
-dave.addEventListener("mouseout", clseMini);
-carie.addEventListener("mouseout", clseMini);
-
+if(andrew){
+  andrew.addEventListener ("mouseout", clseMini);
+}
+if(dave){
+  dave.addEventListener ("mouseout", clseMini);
+}
+if(carie){
+  carie.addEventListener ("mouseout", clseMini);
+}
 
 function clseMini(){
   const picId = this.attributes["data-text"].value;
@@ -64,34 +81,44 @@ function clseMini(){
 }
 
 // Click to open Chef Bio
-let andrewClose = document.getElementById("exitAndrew");
-let daveClose = document.getElementById("exitDave");
-let carieClose = document.getElementById("exitCarie");
-
-andrewClose.addEventListener("click", closeModal);
-daveClose.addEventListener("click", closeModal);
-carieClose.addEventListener("click", closeModal);
-
-function closeModal(){
-  const modalClose = this.attributes["data-exit"].value;
-  const modalExit = document.getElementById(modalClose);
-  modalExit.style.display = "none";
-}
-
-
-//Close Modal Btn 
 let andrewOpen = document.getElementById("andrewDesc");
 let daveOpen = document.getElementById("daveBio");
 let carieOpen = document.getElementById("abtCarie")
 
-andrewOpen.addEventListener("click", openModal);
-daveOpen.addEventListener("click", openModal);
-carieOpen.addEventListener("click", openModal);
-
+if(andrewOpen){
+  andrewOpen.addEventListener ("click", openModal);
+}
+if(daveOpen){
+  daveOpen.addEventListener ("click", openModal);
+}
+if(carieOpen){
+  carieOpen.addEventListener ("click", openModal);
+}
 function openModal(){
   const modalId = this.attributes["data-modal"].value;
   const modal = document.getElementById(modalId);
   modal.style.display = "block";
+}
+
+
+//Close Modal Btn 
+let andrewClose = document.getElementById("exitAndrew");
+let daveClose = document.getElementById("exitDave");
+let carieClose = document.getElementById("exitCarie");
+
+if(andrewClose){
+  andrewClose.addEventListener ("click", closeModal);
+}
+if(daveClose){
+  daveClose.addEventListener ("click", closeModal);
+}
+if(carieClose){
+  carieClose.addEventListener ("click", closeModal);
+}
+function closeModal(){
+  const modalClose = this.attributes["data-exit"].value;
+  const modalExit = document.getElementById(modalClose);
+  modalExit.style.display = "none";
 }
 
 
