@@ -985,8 +985,8 @@ body{
     height: 60vh;
   }
   .innerQuote{
-    margin-top: 0px;
-    margin-left: 0px;
+    margin-top: -20px;
+    margin-left: 10px;
   }
   .innerQuote h3{
     padding-top: 120px;
@@ -1008,9 +1008,6 @@ body{
     width: 340px;
   }
   /* Savory Food Video Starts Here */
-  #videoBackground{
-    zoom: .5;
-  }
   .foodDesc{
     padding-top: 100px;
   }
@@ -1019,7 +1016,6 @@ body{
   }
   .sigText{
     width: 380px;
-    margin-top: -100px;
     margin-right: 0px;
   }
   .price{
@@ -1049,16 +1045,36 @@ body{
     margin-top: 10px;
   }
   .globalReservation{
-    zoom: .5;
+    height: 80vh;
+  }
+  .reserveTitle h3{
+    font-size: 20px;
+  }
+  .reserveTitle h1{
+    font-size: 24px;
   }
   #reservationForm{
-    margin-left: 120px;
+    margin-left: 60px;
   }
   #partySize{
-    margin-top: 20px;
-    margin-left: 164px;
+    margin-left: 16px;
   }
   .resSubmitBtn{
-    margin-left: 184px;
+    margin-left: 38px;
+  }
+  .globalFoot{
+    padding-left: 12px;
+  }
+  .textContain h1{
+    font-size: 20px;
+  }
+  .copyright{
+    font-size: 12px;
+  }
+  .footerContact li h4{
+    font-size: 12px;
+  }
+  .footerContact li p{
+    font-size: 12px;
   }
 }
