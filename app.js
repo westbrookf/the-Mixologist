@@ -16,55 +16,64 @@ function validateForm() {
   }
  return true; 
 }
+
 // Mouse Over To show Chefs Mini Bio
-let andrew = document.getElementById('andrew');
-let dave = document.getElementById('dave');
+let andrew = document.getElementById("andrew");
+let dave = document.getElementById("dave");
+let carie = document.getElementById("carie");
 
-andrew.addEventListener("mouseover", showMini);
-dave.addEventListener("mouseover", showMini);
+andrew.addEventListener("mouseover", shrtBio);
+dave.addEventListener("mouseover", shrtBio);
+carie.addEventListener("mouseover", shrtBio);
 
-function showMini(){
-  const miniBio =  document.querySelectorAll('.minBio');
-  miniBio.style.marginTop = "-420px";
+
+function shrtBio(){
+  const picId = this.attributes["data-text"].value;
+  const pic = document.getElementById(picId);
+  pic.style.marginTop = "-190px";  
 }
-
 // Mouse out To Hide Mini Bio
+andrew.addEventListener("mouseout", clseMini);
+dave.addEventListener("mouseout", clseMini);
+carie.addEventListener("mouseout", clseMini);
 
 
-/*function hideminiBio(){
-  const bioImage = document.getElementById('andrew');
-  bioImage.style.zoom = "";
-  
-  const miniBio = document.getElementById('miniBio');
-  miniBio.style.marginTop = "";
-
-  const backLayer = document.querySelector('.backLayer');
-  backLayer.style.marginTop = "-373px";
-}*/
+function clseMini(){
+  const picId = this.attributes["data-text"].value;
+  const pic = document.getElementById(picId);
+  pic.style.marginTop = "";
+}
 
 // Click to open Chef Bio
+let andrewClose = document.getElementById("exitAndrew");
+let daveClose = document.getElementById("exitDave");
+let carieClose = document.getElementById("exitCarie");
 
-function openBio(){
-  //Opens Modal Container
-  const modalContain = document.getElementsByClassName('modalContain')[0];
-  modalContain.style.display = "block";
-//Opens Specific Chefs Bio
-  const andrewBio = document.getElementById('andrewBio');
-  andrewBio.style.display = "block";
+andrewClose.addEventListener("click", closeModal);
+daveClose.addEventListener("click", closeModal);
+carieClose.addEventListener("click", closeModal);
+
+function closeModal(){
+  const modalClose = this.attributes["data-exit"].value;
+  const modalExit = document.getElementById(modalClose);
+  modalExit.style.display = "none";
 }
 
 
-let closeModal = document.getElementById('exitModal');
+//Close Modal Btn 
+let andrewOpen = document.getElementById("andrewDesc");
+let daveOpen = document.getElementById("daveBio");
+let carieOpen = document.getElementById("abtCarie")
 
-closeModal.addEventListener("click", exitModal);
+andrewOpen.addEventListener("click", openModal);
+daveOpen.addEventListener("click", openModal);
+carieOpen.addEventListener("click", openModal);
 
-function exitModal(){
-  const modalHide = document.getElementsByClassName('modalContain')[0];
-  modalHide.style.display = "none";
+function openModal(){
+  const modalId = this.attributes["data-modal"].value;
+  const modal = document.getElementById(modalId);
+  modal.style.display = "block";
 }
-
-
-
 
 
 
