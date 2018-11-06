@@ -1008,6 +1008,9 @@ body{
     width: 340px;
   }
   /* Savory Food Video Starts Here */
+  #videBackground{
+    height: 60vh;
+  }
   .foodDesc{
     padding-top: 100px;
   }
