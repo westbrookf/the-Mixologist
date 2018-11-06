@@ -33,7 +33,6 @@ body{
 .homeMenu{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 .mainLogo img{
   height: 160px;
@@ -43,7 +42,7 @@ body{
 }
 .navMenu{
   margin-top: 40px;
-  margin-left: -60px;
+  margin-left: 160px;
 }
 .navMenu a{
  font-size: 20px;
@@ -54,7 +53,7 @@ body{
 }
 .mainReservationBtn{
   margin-top: 40px;
-  margin-right: 60px;
+  margin-left: 160px;
 }
 .mainReservationBtn a{
   font-size: 18px;
