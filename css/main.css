@@ -997,17 +997,29 @@ body{
   .homeShowcase{
     height: 60vh;
   }
-  .fa-bars, .fa-times{
-    font-size: 34px;
-    color: #e3d194;
+  .flexBars{
+    display: flex;
+    flex-direction: column;
     float: right;
     margin-top: 10px;
-    margin-right: 30px;
     cursor: pointer;
   }
-  .fa-times{
+  .bars{
+    height: 6px;
+    width: 40px;
+    border: 2px solid #e3d194;
+    float: right;
+    margin-top: 6px;
+    margin-right: 30px;
+  }
+  .times{
+    font-size: 20px;
+    color: #e3d194;
     position: inherit;
     margin-right: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+    cursor: pointer;
   }
   .innerQuote{
     margin-top: 0px;
@@ -1039,9 +1051,10 @@ body{
   /* Savory Food Video Starts Here */
   #videBackground{
     height: 60vh;
+    zoom: 0;
   }
   .foodDesc{
-    padding-top: 100px;
+    padding-top: 160px;
   }
   .filetphto img{
     display: none;

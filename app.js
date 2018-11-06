@@ -32,7 +32,7 @@ function viewNav(){
 
 function exitNav(){
   menu.style.display = "none";
-  openNav.style.display = "block";
+  openNav.style.display = "flex";
 }
 //About Us page 
 // Mouse Over To show Chefs Mini Bio
