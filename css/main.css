@@ -965,9 +965,7 @@ body{
 
 
 @media only screen and (max-width: 414px){
-  body{
-    overflow-x: hidden;
-  }
+
   .homeMenu{
     display: flex;
     flex-direction: column;
@@ -1042,8 +1040,9 @@ body{
     font-size: 24px;
   }
   .mainReservationBtn{
-    width: 300px;
+    width: 100px;
     float: right;
+    margin-right: 190px;
   }
   /* Something New Section Starts Here*/
   .sideImgs img{
