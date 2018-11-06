@@ -16,7 +16,38 @@ function validateForm() {
   }
  return true; 
 }
+//Home Page
+let openNav = document.getElementById("openNav");
+let closeNav = document.getElementById("hideIcon");
+let menu = document.querySelector(".homeMenu");
 
+openNav.addEventListener("click", viewNav);
+closeNav.addEventListener("click", exitNav);
+
+function viewNav(){
+  menu.style.display = "block";
+  menu.style.opacity = "1";
+  openNav.style.display = "none";
+}
+
+function exitNav(){
+  menu.style.display = "none";
+  openNav.style.display = "block";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//About Us page 
 // Mouse Over To show Chefs Mini Bio
 let andrew = document.getElementById("andrew");
 let dave = document.getElementById("dave");
