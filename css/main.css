@@ -963,6 +963,9 @@ body{
 
 
 @media (max-width: 414px){
+  body{
+    overflow-x: hidden;
+  }
   .mainLogo img{
     height: 120px;
     width: 140px;
