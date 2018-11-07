@@ -153,7 +153,7 @@ body{
   text-transform: capitalize;
 }
 #videoBackground{
-  width: 100% !important;
+  width: 100%;
   height: 80vh;
   object-fit: fill;
   zoom: .7;
@@ -965,7 +965,9 @@ body{
 
 
 @media only screen and (max-width: 414px){
-
+  /* body{
+    overflow-x: hidden;
+  } */
   .homeMenu{
     display: flex;
     flex-direction: column;
@@ -980,7 +982,7 @@ body{
     transition: 2s;
   }
   .mainLogo img{
-    padding-top: 40px;
+    padding-top: 10px;
     height: 140px;
     width: 140px;
     margin-left: 0px;
@@ -989,7 +991,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0;
+    margin-top: 0px;
     margin-left: 0;
 
   }
@@ -1059,9 +1061,16 @@ body{
   /* Savory Food Video Starts Here */
   #videBackground{
     zoom: 0;
+    height: 30vh;
   }
   .foodDesc{
     padding-top: 160px;
+  }
+  .foodDesc h3{
+    font-size: 20px;
+  }
+  .foodDesc h1{
+    font-size: 30px;
   }
   .filetphto img{
     display: none;
@@ -1128,5 +1137,132 @@ body{
   }
   .footerContact li p{
     font-size: 12px;
+  }
+  /*  MOBILE ABOUT US PAGE STARTS   HERE */
+  .pageIndex{
+    margin-left: 20px;
+  }
+  .imgContain{
+    display: none;
+  }
+  .aboutTextContainer{
+    width: 380px;
+    margin-left: 0px;
+  }
+  .aboutTextContainer p{
+    font-size: 14px;
+    width: 330px;
+  }
+  .introText{
+    margin-left: 100px;
+  }
+  .introText h3{
+    margin-left: 50px;
+  }
+  .introText h1{
+    font-size: 30px;
+  }
+  .aboutourChefs{
+    flex-direction: column;
+  }
+  .aboutourChefs p{
+    font-size: 14px;
+    width: 380px;
+    text-align: center;
+  }
+  .chefBlock{
+    height: 100%;
+  }
+  #chefRow{
+    align-items: unset;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  .imgWrapper{
+    margin-top: 20px;
+    height: 340px;
+    width: 340px;
+  }
+  .backLayer{
+    height: 340px;
+    width: 340px;
+  }
+  /* Chef Bio Modal starts Here */
+  #andrewBio, #daveMod, #carieBio{
+    margin-left: 10px;
+    width: 380px;
+  }
+  .closeBtn p{
+    font-size: 30px;
+    margin-left: -30px;
+  }
+  .bioThumbnail img{
+    margin-top: 8px;
+    width: 340px;
+    margin-left: 20px;
+  }
+  .professionDesc{
+    font-size: 14px;
+    width: 340px;
+    margin-left: 20px;
+  }
+  .testimonialTitle h3{
+    font-size: 20px;
+  }
+  .testimonialTitle h1{
+    font-size: 30px;
+  }
+  .testimonial{
+    width: 340px;
+    margin-left: 40px;
+  }
+  /* MOBILE MENU PAGE STARTS HERE*/
+  .menuDiscovery{
+    padding-left: 20px;
+  }
+  .menuDiscovery h3{
+    padding-left: 90px;
+  }
+  .menuDiscovery h1{
+    font-size: 30px;
+    padding-left: 60px;
+  }
+  .discoverDesc{
+    flex-direction: column;
+  }
+  .discoverDesc p{
+    font-size: 14px;
+    width: 380px;
+    text-align: center;
+  }
+  .imgRow img{
+    display: none;
+  }
+  /* signature Dishes Start Here */
+  .signatureText{
+    padding-left: 20px;
+  }
+  .signatureText h3{
+    padding-left: 10px;
+  }
+  .signatureText h1{
+    font-size: 30px;
+    padding-left: 10px;
+  }
+  .signatureColumn{
+    margin-left: 30px;
+  }
+  .dish{
+    flex-direction: column;
+    align-items: unset;
+  }
+  .dishText{
+    width: 340px;
+  }
+  .sigPhoto{
+    padding-top: 20px;
+  }
+  .sigPhoto img{
+    width: 340px;
   }
 }
