@@ -965,9 +965,9 @@ body{
 
 
 @media only screen and (max-width: 414px){
-  /* body{
+  body{
     overflow-x: hidden;
-  } */
+  }
   .homeMenu{
     display: flex;
     flex-direction: column;
@@ -1217,9 +1217,7 @@ body{
     margin-left: 40px;
   }
   /* MOBILE MENU PAGE STARTS HERE*/
-  .menuDiscovery{
-    padding-left: 20px;
-  }
+ 
   .menuDiscovery h3{
     padding-left: 90px;
   }
@@ -1264,5 +1262,49 @@ body{
   }
   .sigPhoto img{
     width: 340px;
+  }
+  /* MOBILE BLOG PAGE STARTS HERE */
+  .blogContainer{
+    flex-direction: column;
+  }
+  #row{
+    margin-left: 40px;
+    width: 380px;
+  }
+  .blog{
+    width: 380px;
+    margin-top: 40px;
+  }
+  .postDate{
+    font-size: 16px;
+    width: 140px;
+  }
+  .postImage img{
+    width: 340px;
+  }
+  .postTitle{
+    font-size: 24px;
+    width: 400px;
+  }
+  .postOverview{
+    width: 340px;
+    margin-bottom: 140px;
+    line-height: 22px;
+  }
+  .contactInfoContainer{
+    margin-left: 30px;
+    flex-direction: column;
+    align-items: unset;
+  }
+  .contactText p{
+    width: 340px;
+  }
+  .contactLinks{
+    margin-top: 20px;
+    width: 320px;
+  }
+  #maps{
+    width: 380px;
+    margin-left: 10px;
   }
 }
