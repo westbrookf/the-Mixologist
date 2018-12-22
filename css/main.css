@@ -968,7 +968,6 @@ body{
 
 @media only screen and (max-width: 414px){
   body{
-    scroll-x: none;
     overflow-x: hidden;
   }
   .homeMenu{
