@@ -1,0 +1,1243 @@
+.homeShow {
+  background: linear-gradient(to right, #30303078, #3030306d), url(../img/bg_5.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%; }
+
+.somethingNewContain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px; }
+
+@media only screen and (max-width: 1024px) {
+  .sideImgs {
+    width: 530px;
+    display: flex;
+    flex-direction: row;
+    justify-content: unset;
+    align-items: unset; } }
+@media only screen and (max-width: 768px) {
+  .sideImgs {
+    width: 400px; } }
+@media only screen and (max-width: 425px) {
+  .sideImgs {
+    display: none; } }
+
+.bartenderImg,
+.salmonImg {
+  height: 380px;
+  width: 310px;
+  border-radius: 6px; }
+  @media only screen and (max-width: 1024px) {
+    .bartenderImg,
+    .salmonImg {
+      width: 280px; } }
+  @media only screen and (max-width: 768px) {
+    .bartenderImg,
+    .salmonImg {
+      width: 200px; } }
+
+.whtWeBring {
+  background-color: #fff;
+  margin-left: -40px;
+  height: 320px;
+  width: 500px;
+  z-index: 2;
+  border: 3px solid #d3c186;
+  border-radius: 6px;
+  box-shadow: 10px 10px 30px #50505062;
+  text-align: left;
+  padding: 10px 10px 10px 30px; }
+  .whtWeBring h3 {
+    font-family: "Allura", cursive;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #d3c186;
+    text-transform: capitalize;
+    padding-top: 40px; }
+  .whtWeBring h1 {
+    font-size: 30px;
+    font-weight: lightere;
+    color: "arial";
+    text-transform: capitalize;
+    padding-bottom: 20px; }
+  .whtWeBring p {
+    font-weight: lighter;
+    color: "arial";
+    width: 400px;
+    line-height: 26px; }
+    @media only screen and (max-width: 768px) {
+      .whtWeBring p {
+        line-height: 18px; } }
+  @media only screen and (max-width: 1024px) {
+    .whtWeBring {
+      width: 440px;
+      margin-left: 0px; } }
+  @media only screen and (max-width: 768px) {
+    .whtWeBring {
+      width: 350px; } }
+
+.soulFoodContain {
+  margin-top: 100px;
+  height: 56vh; }
+
+.foodDesc {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  padding-top: 176px; }
+  .foodDesc h3 {
+    font-family: "Allura", cursive;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #d3c186;
+    text-transform: capitalize; }
+  .foodDesc h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: #d3c186;
+    text-transform: capitalize; }
+
+#videoBackground {
+  width: 100%;
+  height: 80vh;
+  object-fit: fill;
+  zoom: 0.7; }
+
+.signatureContain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px; }
+
+.sigText {
+  height: 320px;
+  width: 500px;
+  margin-right: -40px;
+  background-color: #ffffff;
+  z-index: 2;
+  border: 3px solid #d3c186;
+  border-radius: 6px;
+  box-shadow: 10px 10px 30px #50505062;
+  text-align: left;
+  padding: 30px 0 0 30px; }
+  .sigText h3 {
+    font-family: "Allura", cursive;
+    font-size: 26px;
+    font-weight: lighter;
+    color: #d3c186;
+    text-transform: capitalize;
+    padding-bottom: 6px; }
+  .sigText h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    color: "arial";
+    text-transform: capitalize;
+    padding-bottom: 20px; }
+  @media only screen and (max-width: 425px) {
+    .sigText {
+      width: 400px;
+      margin-right: 0; } }
+
+.rating .fa-star {
+  color: #d3c186;
+  font-size: 14px;
+  padding-bottom: 8px; }
+
+.mealName {
+  font-size: 18px;
+  font-weight: lighter;
+  color: #303030;
+  text-transform: capitalize;
+  padding-bottom: 8px; }
+  .mealName p {
+    width: 30px;
+    display: inline-flex;
+    padding-left: 70px; }
+
+.ingredients {
+  text-transform: capitalize;
+  font-weight: lighter;
+  color: #5c5c5c;
+  margin-top: -10px; }
+
+.moreDish {
+  padding-top: 40px; }
+  .moreDish a {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #d3c186;
+    text-transform: capitalize;
+    border: 1px solid #d3c186;
+    border-radius: 6px;
+    padding: 10px 14px 10px 14px;
+    transition: 0.6s; }
+  .moreDish a:hover {
+    box-shadow: 5px 5px 10px black;
+    background-color: #e3d194;
+    color: #e7e7e7; }
+
+.filetphto img {
+  height: 380px;
+  width: 600px;
+  border-radius: 6px; }
+  @media only screen and (max-width: 1024px) {
+    .filetphto img {
+      width: 550px; } }
+  @media only screen and (max-width: 425px) {
+    .filetphto img {
+      display: none; } }
+
+.menuBanner {
+  height: 16vh;
+  width: 1022px;
+  background-color: #211b06;
+  border-radius: 6px;
+  margin-top: 100px;
+  margin-left: 200px;
+  position: absolute; }
+  @media only screen and (max-width: 1024px) {
+    .menuBanner {
+      margin-left: 70px;
+      width: 900px; } }
+  @media only screen and (max-width: 768px) {
+    .menuBanner {
+      width: 700px;
+      margin-left: 40px; } }
+  @media only screen and (max-width: 425px) {
+    .menuBanner {
+      width: 400px;
+      margin-left: 10px; } }
+
+.innerBorder {
+  height: 12vh;
+  width: 1002px;
+  border: 1px solid #d3c186;
+  border-radius: 6px;
+  margin-top: 16px;
+  margin-left: 10px; }
+  @media only screen and (max-width: 1024px) {
+    .innerBorder {
+      width: 880px; } }
+  @media only screen and (max-width: 768px) {
+    .innerBorder {
+      width: 680px; } }
+  @media only screen and (max-width: 425px) {
+    .innerBorder {
+      width: 380px; } }
+
+.theMenu {
+  text-align: center; }
+  .theMenu h3 {
+    font-family: "arial";
+    font-size: 26px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: #d3c186;
+    background-color: #211b06;
+    width: 100px;
+    margin-top: -10px;
+    margin-left: 450px; }
+    @media only screen and (max-width: 1024px) {
+      .theMenu h3 {
+        margin-left: 390px; } }
+    @media only screen and (max-width: 768px) {
+      .theMenu h3 {
+        margin-left: 290px; } }
+    @media only screen and (max-width: 425px) {
+      .theMenu h3 {
+        margin-left: 140px; } }
+  .theMenu h1 {
+    font-size: 30px;
+    color: #d3c186;
+    text-transform: capitalize; }
+  .theMenu .fa-utensils {
+    font-size: 22px;
+    color: #d3c186;
+    margin-top: 24px;
+    background-color: #211b06;
+    width: 40px; }
+    @media only screen and (max-width: 425px) {
+      .theMenu .fa-utensils {
+        margin-top: 20px; } }
+
+.menuContainer {
+  width: 1024px;
+  margin-top: 300px;
+  margin-left: 202px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+  @media only screen and (max-width: 1024px) {
+    .menuContainer {
+      margin-left: 0px; } }
+  @media only screen and (max-width: 425px) {
+    .menuContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: unset;
+      align-items: unset;
+      margin-left: 50px;
+      width: 330px; } }
+
+.menuCard {
+  height: 600px;
+  width: 330px;
+  background-color: transparent; }
+  @media only screen and (max-width: 425px) {
+    .menuCard {
+      padding-top: 20px; } }
+
+.innerCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transform-style: preserve-3d;
+  transition: 0.7s;
+  border: 2px solid #d3c186; }
+
+.menuCard:hover {
+  zoom: 1.1; }
+  .menuCard:hover .innerCard {
+    transform: rotateY(180deg);
+    box-shadow: 2px 2px 8px #303030; }
+
+.frntCard,
+.bckCard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; }
+
+.frntCard {
+  background-color: #d3c186;
+  color: black;
+  z-index: 2; }
+  .frntCard img {
+    height: 100%; }
+
+.bckCard {
+  background-color: #e7e7e7;
+  color: #d3c186;
+  transform: rotateY(180deg);
+  z-index: 1; }
+
+.menuName {
+  font-family: "Allura", cursive;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #d3c186;
+  text-transform: capitalize;
+  text-align: center;
+  border: 1px solid #d3c186;
+  border-radius: 4px;
+  padding: 10px;
+  width: 140px;
+  margin-top: 30px;
+  margin-left: 20px; }
+
+.menuList {
+  padding-top: 30px; }
+  .menuList .listItem {
+    padding-top: 20px;
+    padding-left: 20px; }
+    .menuList .listItem h4 {
+      font-family: "arial";
+      font-size: 18px;
+      font-weight: lighter;
+      text-transform: capitalize;
+      color: #303030;
+      width: 280px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: unset; }
+      .menuList .listItem h4 p {
+        padding-left: 40px; }
+      @media only screen and (max-width: 768px) {
+        .menuList .listItem h4 {
+          font-size: 14px; } }
+    .menuList .listItem .ingredients {
+      padding-top: 20px; }
+
+.aboutShow {
+  background: linear-gradient(to right, #30303078, #3030306d), url(../img/aboutBg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%; }
+
+.aboutUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 100px; }
+
+.imgContain img {
+  height: 380px;
+  width: 500px;
+  border-radius: 6px; }
+@media only screen and (max-width: 425px) {
+  .imgContain {
+    display: none; } }
+
+.aboutTextContainer {
+  height: 320px;
+  width: 500px;
+  border: 2px solid #d3c186;
+  border-radius: 6px;
+  box-shadow: 10px 10px 30px #50505062;
+  margin-left: -260px;
+  background-color: #fff;
+  padding: 10px 10px 10px 30px; }
+  .aboutTextContainer h3 {
+    font-family: "Allura", cursive;
+    font-size: 26px;
+    font-weight: lighter;
+    color: #d3c186;
+    text-transform: capitalize;
+    padding-top: 30px; }
+  .aboutTextContainer h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    color: "arial";
+    text-transform: capitalize;
+    padding-bottom: 20px; }
+  .aboutTextContainer p {
+    font-weight: lighter;
+    color: "arial";
+    width: 400px;
+    line-height: 26px; }
+  @media only screen and (max-width: 1024px) {
+    .aboutTextContainer {
+      margin-left: -130px; } }
+  @media only screen and (max-width: 425px) {
+    .aboutTextContainer {
+      margin-left: 0px; } }
+
+.chefWrapper {
+  margin-top: 140px; }
+
+.chefIntro {
+  margin-top: 140px; }
+
+.introText {
+  margin-left: 140px; }
+  .introText h3 {
+    font-family: "Allura", cursive;
+    font-size: 26px;
+    font-weight: lighter;
+    color: #d3c186;
+    text-transform: capitalize; }
+  .introText h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: "arial";
+    text-transform: capitalize;
+    padding-bottom: 30px; }
+  @media only screen and (max-width: 768px) {
+    .introText {
+      margin-left: 50px; } }
+
+.aboutourChefs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 40px; }
+  .aboutourChefs p {
+    font-size: 18px;
+    width: 500px;
+    line-height: 36px; }
+    @media only screen and (max-width: 768px) {
+      .aboutourChefs p {
+        width: 450px; } }
+    @media only screen and (max-width: 425px) {
+      .aboutourChefs p {
+        width: 370px;
+        text-align: center;
+        padding-left: 60px; } }
+  @media only screen and (max-width: 425px) {
+    .aboutourChefs {
+      display: flex;
+      flex-direction: column;
+      justify-content: unset;
+      align-items: unset; } }
+
+.chefBlock {
+  height: 60vh;
+  width: 100%; }
+  @media only screen and (max-width: 425px) {
+    .chefBlock {
+      height: 160vh; } }
+
+#chefRow {
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  margin-left: 150px; }
+  @media only screen and (max-width: 1024px) {
+    #chefRow {
+      margin-left: 0px; } }
+  @media only screen and (max-width: 425px) {
+    #chefRow {
+      display: flex;
+      flex-direction: column;
+      justify-content: unset;
+      align-items: unset;
+      margin-left: 70px;
+      width: 280px; } }
+
+.imgWrapper {
+  height: 370px;
+  width: 340px;
+  border-radius: 4px;
+  transition: 1s;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 8px 8px 30px #3f3f3f7c; }
+  .imgWrapper img {
+    height: 370px;
+    width: 340px; }
+    @media only screen and (max-width: 768px) {
+      .imgWrapper img {
+        width: 280px; } }
+  @media only screen and (max-width: 768px) {
+    .imgWrapper {
+      width: 280px; } }
+  @media only screen and (max-width: 425px) {
+    .imgWrapper {
+      margin-top: 20px; } }
+
+.modalContain {
+  display: none; }
+
+#andrewContain,
+#daveContain,
+#carieContain {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.backLayer {
+  height: 370px;
+  width: 340px;
+  position: absolute;
+  margin-top: -374px;
+  background-color: #2e2c2c64; }
+  @media only screen and (max-width: 768px) {
+    .backLayer {
+      width: 256px; } }
+  @media only screen and (max-width: 425px) {
+    .backLayer {
+      width: 280px; } }
+
+.miniBio {
+  text-align: center;
+  height: 370px;
+  width: 340px;
+  transition: 0.6s;
+  opacity: 0.9; }
+  .miniBio .chefsName {
+    font-size: 38px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: lighter; }
+  .miniBio .chefTitle {
+    font-family: "Allura", cursive;
+    font-size: 26px;
+    color: #e3d194;
+    text-transform: capitalize; }
+
+#andrewBio,
+#daveMod,
+#carieBio {
+  height: 500px;
+  width: 800px;
+  background-color: #e9e9e9;
+  border-radius: 6px;
+  box-shadow: 10px 10px 40px #3c3c3c5a;
+  margin-top: 100px;
+  margin-left: 300px; }
+  @media only screen and (max-width: 1024px) {
+    #andrewBio,
+    #daveMod,
+    #carieBio {
+      margin-left: 100px; } }
+  @media only screen and (max-width: 768px) {
+    #andrewBio,
+    #daveMod,
+    #carieBio {
+      width: 600px;
+      margin-left: 80px; } }
+
+.closeBtn {
+  padding-top: 10px;
+  padding-left: 60px; }
+  .closeBtn p {
+    font-size: 36px;
+    color: #e3d194;
+    cursor: pointer;
+    width: 10px; }
+
+.bioThumbnail img {
+  height: 240px;
+  width: 400px;
+  margin-top: -20px;
+  margin-left: 200px;
+  border-radius: 4px; }
+  @media only screen and (max-width: 768px) {
+    .bioThumbnail img {
+      width: 350px;
+      margin-left: 120px; } }
+
+.bioTitle {
+  text-align: center; }
+  .bioTitle .bioName {
+    font-size: 30px;
+    font-weight: lighter;
+    color: "arial";
+    text-transform: capitalize; }
+  .bioTitle .profession {
+    font-family: "Allura", cursive;
+    font-size: 26px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: #e3d194; }
+  .bioTitle .professionDesc {
+    font-size: 18px;
+    font-weight: lighter;
+    width: 506px;
+    margin-left: 146px; }
+    @media only screen and (max-width: 768px) {
+      .bioTitle .professionDesc {
+        width: 450px;
+        margin-left: 70px; } }
+
+.testContain {
+  background: linear-gradient(to right, #30303078, #3030306d), url(../img/post1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 140px;
+  text-align: center; }
+
+.testimonialTitle {
+  padding-top: 100px; }
+  .testimonialTitle h3 {
+    font-family: "Allura", cursive;
+    font-size: 26px;
+    font-weight: lighter;
+    color: #e3d194;
+    text-transform: capitalize; }
+  .testimonialTitle h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: #e7e7e7;
+    text-transform: capitalize;
+    padding-bottom: 40px; }
+
+.fa-quote-left {
+  font-size: 20px;
+  color: #e3d194;
+  padding-bottom: 30px; }
+
+.testimonial {
+  width: 740px;
+  margin-left: 340px; }
+  .testimonial p {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #e7e7e7; }
+  .testimonial h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #e3d194;
+    text-transform: capitalize;
+    padding-top: 20px; }
+  @media only screen and (max-width: 1024px) {
+    .testimonial {
+      margin-left: 140px; } }
+  @media only screen and (max-width: 768px) {
+    .testimonial {
+      margin-left: 100px;
+      width: 600px; } }
+  @media only screen and (max-width: 425px) {
+    .testimonial {
+      width: 400px;
+      margin-left: 10px; } }
+
+.menuShow {
+  background: linear-gradient(to right, #30303078, #3030306d), url(../img/menubg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%; }
+
+.menuDiscovery {
+  margin-top: 100px; }
+  .menuDiscovery h3 {
+    font-family: "Allura", cursive;
+    font-size: 26px;
+    font-weight: lighter;
+    color: #d3c186;
+    text-transform: capitalize;
+    padding-left: 140px; }
+    @media only screen and (max-width: 768px) {
+      .menuDiscovery h3 {
+        padding-left: 60px; } }
+  .menuDiscovery h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: "arial";
+    text-transform: capitalize;
+    padding-left: 140px;
+    padding-bottom: 30px; }
+    @media only screen and (max-width: 768px) {
+      .menuDiscovery h1 {
+        padding-left: 60px; } }
+
+.discoverDesc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+  .discoverDesc p {
+    width: 500px;
+    line-height: 36px; }
+    @media only screen and (max-width: 768px) {
+      .discoverDesc p {
+        width: 378px; } }
+  @media only screen and (max-width: 768px) {
+    .discoverDesc {
+      margin-bottom: -260px; } }
+  @media only screen and (max-width: 425px) {
+    .discoverDesc {
+      display: flex;
+      flex-direction: column;
+      justify-content: unset;
+      align-items: unset;
+      margin-left: 30px;
+      text-align: center; } }
+
+.signatureDishes {
+  width: 1022x;
+  border-top: 2px solid #d3c186;
+  margin-top: 100px; }
+
+.signatureText {
+  padding-top: 60px;
+  padding-left: 140px; }
+  .signatureText h3 {
+    font-family: "Allura", cursive;
+    font-size: 26px;
+    font-weight: lighter;
+    color: #d3c186;
+    text-transform: capitalize; }
+  .signatureText h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: "arial";
+    text-transform: capitalize;
+    padding-bottom: 30px; }
+  @media only screen and (max-width: 768px) {
+    .signatureText {
+      padding-left: 60px; } }
+
+.signatureColumn {
+  width: 1022px;
+  margin-top: 70px;
+  margin-left: 200px; }
+  @media only screen and (max-width: 1024px) {
+    .signatureColumn {
+      margin-left: 0px; } }
+  @media only screen and (max-width: 425px) {
+    .signatureColumn {
+      margin-left: 20px;
+      width: 400px; } }
+
+.dish {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  @media only screen and (max-width: 425px) {
+    .dish {
+      display: flex;
+      flex-direction: column;
+      justify-content: unset;
+      align-items: unset; } }
+
+.fa-star {
+  color: #d3c186; }
+
+.menuMealName {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #303030; }
+  .menuMealName p {
+    margin-left: 60px;
+    display: inline-flex;
+    width: 30px; }
+    @media only screen and (max-width: 425px) {
+      .menuMealName p {
+        display: none; } }
+
+.sigPhoto img {
+  height: 280px;
+  width: 480px;
+  border-radius: 6px; }
+  @media only screen and (max-width: 768px) {
+    .sigPhoto img {
+      width: 380px; } }
+
+/* dish two padding*/
+#dishTwo,
+#dishThree {
+  padding-top: 80px; }
+
+.blogShow {
+  background: linear-gradient(to right, #30303078, #3030306d), url(../img/blogbg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%; }
+
+.blogContainer {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-gap: 40px;
+  margin: 60px 0 260px 200px; }
+  @media only screen and (max-width: 1024px) {
+    .blogContainer {
+      margin-left: 90px;
+      grid-template-columns: 400px 400px;
+      grid-gap: 60px; } }
+  @media only screen and (max-width: 768px) {
+    .blogContainer {
+      grid-template-columns: 300px 300px;
+      margin-left: 50px; } }
+  @media only screen and (max-width: 425px) {
+    .blogContainer {
+      grid-template-columns: 360px;
+      margin-left: 30px;
+      grid-gap: 10px; } }
+
+#row {
+  width: 500px; }
+  #row .rowTwo {
+    padding-top: 200px;
+    padding-bottom: 110px; }
+  #row .blog {
+    height: 400px;
+    width: 500px; }
+  #row #post2 {
+    padding-top: 220px; }
+    @media only screen and (max-width: 1024px) {
+      #row #post2 {
+        padding-top: 260px; } }
+    @media only screen and (max-width: 768px) {
+      #row #post2 {
+        padding-top: 320px; } }
+  #row #post3 {
+    margin-top: 440px; }
+    @media only screen and (max-width: 1024px) {
+      #row #post3 {
+        margin-top: 500px; } }
+    @media only screen and (max-width: 768px) {
+      #row #post3 {
+        margin-top: 640px; } }
+    @media only screen and (max-width: 425px) {
+      #row #post3 {
+        margin-top: 740px; } }
+  #row .postDate {
+    font-family: "Allura", cursive;
+    font-size: 20px;
+    background-color: #fff;
+    border: 2px solid #e3d094;
+    border-radius: 4px;
+    width: 160px;
+    padding: 8px 16px 8px 16px;
+    margin-bottom: -20px;
+    margin-left: 20px; }
+  #row .postImage img {
+    height: 300px;
+    width: 500px;
+    position: relative;
+    z-index: -2; }
+  #row .postTitle {
+    font-size: 28px;
+    font-weight: lighter;
+    color: #303030;
+    text-transform: capitalize;
+    width: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  #row .author {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #ffffff;
+    background-color: #e3d094;
+    padding: 8px 16px 8px 16px;
+    width: 312px;
+    margin-bottom: 20px; }
+  #row .postOverview {
+    font-weight: lighter;
+    line-height: 30px; }
+  @media only screen and (max-width: 768px) {
+    #row {
+      margin-bottom: 70px; } }
+
+.contactShow {
+  background: linear-gradient(to right, #30303078, #3030306d), url(../img/contactbg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%; }
+
+.contactInfoContainer {
+  width: 1022px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 200px; }
+  @media only screen and (max-width: 1024px) {
+    .contactInfoContainer {
+      width: 900px;
+      margin-left: 60px; } }
+  @media only screen and (max-width: 768px) {
+    .contactInfoContainer {
+      width: 700px; } }
+  @media only screen and (max-width: 425px) {
+    .contactInfoContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: unset;
+      align-items: unset;
+      margin-left: 0px;
+      width: 400px; } }
+
+.contactText {
+  width: 500px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: unset; }
+  .contactText h1 {
+    font-size: 36px;
+    font-weight: lighter;
+    color: #303030;
+    text-transform: capitalize; }
+  .contactText p {
+    font-weight: lighter;
+    color: #303030;
+    padding-top: 30px; }
+  @media only screen and (max-width: 1024px) {
+    .contactText {
+      width: 360px; } }
+  @media only screen and (max-width: 768px) {
+    .contactText {
+      width: 240px; } }
+  @media only screen and (max-width: 425px) {
+    .contactText {
+      width: 100%;
+      text-align: center; } }
+
+.contactLogo {
+  font-size: 40px;
+  font-weight: lighter;
+  color: #303030;
+  text-transform: capitalize;
+  padding-top: 40px; }
+
+.restaurant {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #303030;
+  text-transform: capitalize;
+  letter-spacing: 15px; }
+
+.contactLinks {
+  width: 400px;
+  height: 200px;
+  border: 3px solid #d3c186;
+  border-radius: 6px;
+  padding: 12px 40px 0 40px; }
+  .contactLinks li {
+    display: flex;
+    padding-top: 30px; }
+    .contactLinks li h4 {
+      padding-right: 10px; }
+  @media only screen and (max-width: 425px) {
+    .contactLinks {
+      width: 360px;
+      margin-top: 20px;
+      margin-left: 30px; } }
+
+#maps {
+  height: 400px;
+  width: 1022px;
+  margin-top: 100px;
+  margin-left: 200px; }
+  @media only screen and (max-width: 1024px) {
+    #maps {
+      margin-left: 0px; } }
+
+#openNav,
+#hideIcon {
+  display: none; }
+
+.navMenuContain {
+  display: flex;
+  flex-direction: row;
+  justify-content: unset;
+  align-items: unset; }
+  @media only screen and (max-width: 425px) {
+    .navMenuContain {
+      display: flex;
+      flex-direction: column;
+      justify-content: unset;
+      align-items: unset; } }
+
+.mainLogo img {
+  height: 160px;
+  width: 240px;
+  border-radius: 6px;
+  margin-left: 60px; }
+  @media only screen and (max-width: 768px) {
+    .mainLogo img {
+      width: 160px;
+      margin-left: 10px; } }
+  @media only screen and (max-width: 425px) {
+    .mainLogo img {
+      width: 240px;
+      margin-left: 90px; } }
+
+.navMenu {
+  margin-top: 40px;
+  margin-left: 160px; }
+  .navMenu a {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #d3c186;
+    text-decoration: none;
+    padding-left: 40px; }
+    @media only screen and (max-width: 1024px) {
+      .navMenu a {
+        padding-left: 10px; } }
+  @media only screen and (max-width: 1024px) {
+    .navMenu {
+      margin-left: 60px; } }
+  @media only screen and (max-width: 768px) {
+    .navMenu {
+      margin-left: 10px; } }
+  @media only screen and (max-width: 425px) {
+    .navMenu {
+      margin-top: 20px;
+      margin-left: 30px; } }
+
+.mainReservationBtn {
+  margin-top: 40px;
+  margin-left: 160px; }
+  .mainReservationBtn a {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #d3c186;
+    border: 1px solid #d3c186;
+    border-radius: 4px;
+    padding: 10px 20px 10px 20px; }
+  @media only screen and (max-width: 1024px) {
+    .mainReservationBtn {
+      margin-left: 100px; } }
+  @media only screen and (max-width: 768px) {
+    .mainReservationBtn {
+      margin-left: 60px; } }
+  @media only screen and (max-width: 425px) {
+    .mainReservationBtn {
+      margin-left: 140px; } }
+
+.innerQuote {
+  margin: 180px 0 0 60px;
+  text-align: center; }
+  .innerQuote h3 {
+    font-family: "Allura", cursive;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #d3c186;
+    text-transform: capitalize; }
+  .innerQuote h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: #d3c186; }
+  @media only screen and (max-width: 425px) {
+    .innerQuote {
+      margin-left: 0; } }
+
+.globalFoot {
+  background: linear-gradient(to right, #30303078, #3030306d), url(../img/bg_6.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  margin-top: 100px; }
+
+.reserveTitle {
+  text-align: center;
+  padding-top: 150px; }
+  .reserveTitle h3 {
+    font-family: "Allura", cursive;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #d3c186; }
+  .reserveTitle h1 {
+    font-family: "arial";
+    font-size: 40px;
+    font-weight: lighter;
+    color: #d3c186;
+    text-transform: capitalize; }
+
+#reservationForm {
+  margin-top: 40px;
+  margin-left: 460px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 500px;
+  text-align: center; }
+  #reservationForm .input {
+    height: 40px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #fff;
+    background: transparent;
+    text-align: center;
+    border: 2px solid #d3c186;
+    margin-left: 15px; }
+    @media only screen and (max-width: 425px) {
+      #reservationForm .input {
+        width: 400px; } }
+  #reservationForm .input::placeholder {
+    color: #fff;
+    font-weight: lighter; }
+  #reservationForm .resSubmitBtn {
+    font-size: 18px;
+    color: #cdcbc5;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    margin-left: 160px;
+    background: transparent;
+    border: 2px solid #d3c186;
+    padding: 12px 22px 12px 22px; }
+    @media only screen and (max-width: 425px) {
+      #reservationForm .resSubmitBtn {
+        margin-left: 120px; } }
+  @media only screen and (max-width: 1024px) {
+    #reservationForm {
+      margin-left: 270px; } }
+  @media only screen and (max-width: 768px) {
+    #reservationForm {
+      margin-left: 150px; } }
+  @media only screen and (max-width: 425px) {
+    #reservationForm {
+      margin-left: 0px; } }
+
+.footerMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: unset;
+  margin-top: 130px; }
+  @media only screen and (max-width: 425px) {
+    .footerMenu {
+      display: flex;
+      flex-direction: column;
+      justify-content: unset;
+      align-items: unset;
+      margin-top: 80px; } }
+
+.textContain {
+  margin-left: 60px; }
+  .textContain h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: #d3c186;
+    text-transform: capitalize; }
+  .textContain p {
+    color: #e7e7e7; }
+  @media only screen and (max-width: 425px) {
+    .textContain {
+      margin-left: 100px; } }
+
+.footerDesc p {
+  font-weight: lighter;
+  font-size: 18px;
+  color: #f2f2f27b;
+  width: 500px; }
+
+.footerContact {
+  margin-right: 60px; }
+  .footerContact li {
+    display: flex;
+    padding-top: 10px; }
+    .footerContact li h4 {
+      font-size: 18px;
+      font-weight: lighter;
+      text-transform: capitalize;
+      color: #d3c186;
+      padding-right: 10px; }
+    .footerContact li p {
+      font-weight: lighter;
+      color: #e7e7e7; }
+  @media only screen and (max-width: 425px) {
+    .footerContact {
+      display: none; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  max-width: 100%; }
+
+body {
+  background-color: #e9e9e9; }
+
+.pageIndex {
+  margin-top: 40px;
+  margin-left: 60px; }
+  .pageIndex a {
+    font-family: "Allura", cursive;
+    font-size: 26px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: #303030; }
+  .pageIndex a:hover {
+    color: #e3d194; }
+
+/*# sourceMappingURL=app.css.map */

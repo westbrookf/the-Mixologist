@@ -1,0 +1,36 @@
+//Showcase Images
+@mixin Background($background-Phto) {
+  background: linear-gradient(to right, #30303078, #3030306d), $background-Phto;
+  background-size: cover;
+  background-position: center;
+}
+//Flex Properties
+@mixin Display($direction, $justCon, $itemAlign) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justCon;
+  align-items: $itemAlign;
+}
+//Button Hover effect
+@mixin btnEffect() {
+  box-shadow: 5px 5px 10px black;
+  background-color: $primaryGold;
+}
+//Responsive Mixin
+@mixin Laptop {
+  @media only screen and(max-width: 1024px) {
+    @content;
+  }
+}
+//Tablet
+@mixin Tablet {
+  @media only screen and(max-width: 768px) {
+    @content;
+  }
+}
+//Mobile
+@mixin Mobile {
+  @media only screen and(max-width: 425px) {
+    @content;
+  }
+}

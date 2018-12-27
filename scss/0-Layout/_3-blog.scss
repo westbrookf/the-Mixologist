@@ -1,0 +1,106 @@
+.blogShow {
+  @include Background(url(../img/blogbg.jpg));
+  height: 60vh;
+  width: 100%;
+}
+.blogContainer {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-gap: 40px;
+  margin: 60px 0 260px 200px;
+  //Responsive
+  @include Laptop {
+    margin-left: 90px;
+    grid-template-columns: 400px 400px;
+    grid-gap: 60px;
+  }
+  @include Tablet {
+    grid-template-columns: 300px 300px;
+    margin-left: 50px;
+  }
+  @include Mobile {
+    grid-template-columns: 360px;
+    margin-left: 30px;
+    grid-gap: 10px;
+  }
+}
+#row {
+  width: 500px;
+  .rowTwo {
+    padding-top: 200px;
+    padding-bottom: 110px;
+  }
+  .blog {
+    height: 400px;
+    width: 500px;
+  }
+  #post2 {
+    padding-top: 220px;
+    //responsive
+    @include Laptop {
+      padding-top: 260px;
+    }
+    @include Tablet {
+      padding-top: 320px;
+    }
+    // @include Mobile {
+    //   padding-top: 400px;
+    // }
+  }
+  #post3 {
+    margin-top: 440px;
+    //responsive
+    @include Laptop {
+      margin-top: 500px;
+    }
+    @include Tablet {
+      margin-top: 640px;
+    }
+    @include Mobile {
+      margin-top: 740px;
+    }
+  }
+  .postDate {
+    font-family: "Allura", cursive;
+    font-size: 20px;
+    background-color: #fff;
+    border: 2px solid #e3d094;
+    border-radius: 4px;
+    width: 160px;
+    padding: 8px 16px 8px 16px;
+    margin-bottom: -20px;
+    margin-left: 20px;
+  }
+  .postImage img {
+    height: 300px;
+    width: 500px;
+    position: relative;
+    z-index: -2;
+  }
+  .postTitle {
+    font-size: 28px;
+    font-weight: lighter;
+    color: #303030;
+    text-transform: capitalize;
+    width: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .author {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #ffffff;
+    background-color: #e3d094;
+    padding: 8px 16px 8px 16px;
+    width: 312px;
+    margin-bottom: 20px;
+  }
+  .postOverview {
+    font-weight: lighter;
+    line-height: 30px;
+  }
+  //Row Responsive
+  @include Tablet {
+    margin-bottom: 70px;
+  }
+}

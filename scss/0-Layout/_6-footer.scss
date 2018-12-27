@@ -1,0 +1,131 @@
+.globalFoot {
+  @include Background(url(../img/bg_6.jpg));
+  height: 100vh;
+  width: 100%;
+  margin-top: 100px;
+}
+.reserveTitle {
+  text-align: center;
+  padding-top: 150px;
+  h3 {
+    font-family: $secFont;
+    font-size: 30px;
+    font-weight: lighter;
+    color: $secGold;
+  }
+  h1 {
+    font-family: $primary-font;
+    font-size: 40px;
+    font-weight: lighter;
+    color: $secGold;
+    text-transform: capitalize;
+  }
+}
+#reservationForm {
+  margin-top: 40px;
+  margin-left: 460px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 500px;
+  text-align: center;
+  .input {
+    height: 40px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #fff;
+    background: transparent;
+    text-align: center;
+    border: 2px solid #d3c186;
+    margin-left: 15px;
+    //responsive
+    @include Mobile {
+      width: 400px;
+    }
+  }
+  .input::placeholder {
+    color: #fff;
+    font-weight: lighter;
+  }
+  .resSubmitBtn {
+    font-size: 18px;
+    color: #cdcbc5;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    margin-left: 160px;
+    background: transparent;
+    border: 2px solid #d3c186;
+    padding: 12px 22px 12px 22px;
+    //Responsive
+    @include Mobile {
+      margin-left: 120px;
+    }
+  }
+  //Reservation form Responsive
+  @include Laptop {
+    margin-left: 270px;
+  }
+  @include Tablet {
+    margin-left: 150px;
+  }
+  @include Mobile {
+    margin-left: 0px;
+  }
+}
+.footerMenu {
+  @include Display(row, space-between, unset);
+  margin-top: 130px;
+  //Responsive
+  @include Mobile {
+    @include Display(column, unset, unset);
+    margin-top: 80px;
+  }
+}
+.textContain {
+  margin-left: 60px;
+  h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: $secGold;
+    text-transform: capitalize;
+  }
+  p {
+    color: #e7e7e7;
+  }
+  //Text contain responsive
+  @include Mobile {
+    margin-left: 100px;
+  }
+}
+.footerDesc {
+  p {
+    font-weight: lighter;
+    font-size: 18px;
+    color: #f2f2f27b;
+    width: 500px;
+  }
+}
+.footerContact {
+  margin-right: 60px;
+  li {
+    display: flex;
+    padding-top: 10px;
+    h4 {
+      font-size: 18px;
+      font-weight: lighter;
+      text-transform: capitalize;
+      color: $secGold;
+      padding-right: 10px;
+    }
+    p {
+      font-weight: lighter;
+      color: #e7e7e7;
+    }
+  }
+  //footerContact Responsive
+  @include Mobile {
+    display: none;
+  }
+}

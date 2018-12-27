@@ -1,0 +1,132 @@
+.menuShow {
+  @include Background(url(../img/menubg.jpg));
+  height: 60vh;
+  width: 100%;
+}
+.menuDiscovery {
+  margin-top: 100px;
+  h3 {
+    font-family: $secFont;
+    font-size: 26px;
+    font-weight: lighter;
+    color: $secGold;
+    text-transform: capitalize;
+    padding-left: 140px;
+    //Responsive
+    @include Tablet {
+      padding-left: 60px;
+    }
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: $primary-font;
+    text-transform: capitalize;
+    padding-left: 140px;
+    padding-bottom: 30px;
+    //Responsive
+    @include Tablet {
+      padding-left: 60px;
+    }
+  }
+}
+.discoverDesc {
+  @include Display(row, space-evenly, center);
+  p {
+    width: 500px;
+    line-height: 36px;
+    //Responsive
+    @include Tablet {
+      width: 378px;
+    }
+  }
+  //Discover Desc Responsive
+  @include Tablet {
+    margin-bottom: -260px;
+  }
+  @include Mobile {
+    @include Display(column, unset, unset);
+    margin-left: 30px;
+    text-align: center;
+  }
+}
+.signatureDishes {
+  width: 1022x;
+  border-top: 2px solid $secGold;
+  margin-top: 100px;
+}
+.signatureText {
+  padding-top: 60px;
+  padding-left: 140px;
+  h3 {
+    font-family: $secFont;
+    font-size: 26px;
+    font-weight: lighter;
+    color: $secGold;
+    text-transform: capitalize;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: $primary-font;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+  }
+  //Signature Text Responsive
+  @include Tablet {
+    padding-left: 60px;
+  }
+}
+.signatureColumn {
+  width: 1022px;
+  margin-top: 70px;
+  margin-left: 200px;
+  //Responsive
+  @include Laptop {
+    margin-left: 0px;
+  }
+  @include Mobile {
+    margin-left: 20px;
+    width: 400px;
+  }
+}
+.dish {
+  @include Display(row, space-between, center);
+  //Responsive
+  @include Mobile {
+    @include Display(column, unset, unset);
+  }
+}
+.fa-star {
+  color: $secGold;
+}
+.menuMealName {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: $primaryFColor;
+  p {
+    margin-left: 60px;
+    display: inline-flex;
+    width: 30px;
+    //Responsive
+    @include Mobile {
+      display: none;
+    }
+  }
+}
+.sigPhoto {
+  img {
+    height: 280px;
+    width: 480px;
+    border-radius: 6px;
+    //Responsive
+    @include Tablet {
+      width: 380px;
+    }
+  }
+}
+/* dish two padding*/
+#dishTwo,
+#dishThree {
+  padding-top: 80px;
+}

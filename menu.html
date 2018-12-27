@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"   content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!--Main CSS-->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/app.css" />
     <!--Typography-->
-    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Allura"
+      rel="stylesheet"
+    />
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-POYwD7xcktv3gUeZO5s/9nUbRJG/WOmV6jfEGikMJu77LGYO8Rfs2X7URG822aum" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-POYwD7xcktv3gUeZO5s/9nUbRJG/WOmV6jfEGikMJu77LGYO8Rfs2X7URG822aum"
+      crossorigin="anonymous"
+    />
     <title>Venue</title>
   </head>
   <body>
-    <header class="menuShowcase">
+    <header class="pageShowcase menuShow">
       <div class="flexBars" id="openNav">
-        <span class="bars"></span>
-        <span class="bars"></span>
+        <span class="bars"></span> <span class="bars"></span>
         <span class="bars"></span>
       </div>
-      <div class="homeMenu">
-            <div class="times" id="hideIcon">&times;</div>
+      <div class="navMenuContain">
+        <div class="times" id="hideIcon">&times;</div>
         <a href="index.html" class="mainLogo">
-          <img src="img/Mix Logo.jpg">
+          <img src="img/Mix Logo.jpg" />
         </a>
         <div class="navMenu">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="menu.html">Menu</a>
-          <a href="blog.html">Blog</a>
+          <a href="index.html">Home</a> <a href="about.html">About Us</a>
+          <a href="menu.html">Menu</a> <a href="blog.html">Blog</a>
           <a href="contact.html">Contact Us</a>
         </div>
         <div class="mainReservationBtn">
@@ -37,177 +42,203 @@
       </div>
     </header>
     <div class="pageIndex">
-      <a href="index.html">Home /</a>
-      <a href="about.html">about us /</a>
+      <a href="index.html">Home /</a> <a href="about.html">about us /</a>
       <a href="menu.html">menu</a>
     </div>
     <div class="menuDiscovery">
       <h3>something flavorful</h3>
       <h1>discover our menu</h1>
       <div class="discoverDesc">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nulla reiciendis cum assumenda inventore similique id veniam repellat iste suscipit sapiente possimus at minima, accusantium voluptates quos cupiditate dolorum, quasi veritatis? Quaerat id nam minus harum, vitae minima ab deleniti aliquid asperiores labore? Error, numquam?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus necessitatibus ea minus, illum iste dolore consequuntur veritatis tenetur blanditiis nesciunt a sequi asperiores, obcaecati doloremque enim. A qui rem autem saepe quasi dolorum adipisci alias architecto minus deserunt. Dolorum quaerat quasi nobis at nesciunt inventore.</p>
+        <p>
+          Bon Appetite! Eating tasty meals makes times spent at The Mixologist
+          all the more enjoyable. We take great pride in our campfire culinary
+          skills; providing delicious meals is an important part of our
+          restuarant. Take a look through some of our menu selections.
+        </p>
+        <p>
+          Vegetarians and those with special dietary needs are always
+          accommodated. You will be pleasantly surprised at how many gourmet
+          entrees we can create here at The Mixologist. We also offer a large
+          beverage menu selection. We keep in mind that every person has a
+          different taste.
+        </p>
       </div>
     </div>
     <!--menu starts here-->
-    <div class="imgRow">
-        <img src="img/dish-8.jpg">
-        <img src="img/dish-1.jpg">
-        <img src="img/dessert-6.jpg">
-      </div>
-      <section class="menu">
-        <div class="block1" id="starters">
-          <ul class="listContain">
-            <h2  class="mealType">starters</h2>
-            <li>
-              <div class="flexPrice">
-                <h4 class="mealName">shrimp cocktail</h4>
-                <h4 class="price">$15</h4>
+    <div class="menuContainer">
+      <div class="menuCard starterCard">
+        <div class="innerCard">
+          <div class="frntCard"><img src="img/vertSteak.jpg" /></div>
+          <div class="bckCard">
+            <h3 class="menuName">starters</h3>
+            <div class="menuList">
+              <div class="listItem shrimp-cocktail">
+                <h4>
+                  shrimp cocktail
+                  <p>$15</p>
+                </h4>
+                <p class="ingredients">Shrimp / Garlic / Cocktail Sauce</p>
               </div>
-              <p class="ingredients">Shrimp / Garlic / Cocktail Sauce
-              </p>
-            </li>
-            <!--Item Two-->
-            <li>
-                <div class="flexPrice">
-                  <h4 class="mealName">french onion soupd</h4>
-                  <h4 class="price">$10</h4>
-                </div>
-                <p class="ingredients">Beef Broth / Chopped Onion / Dry Sherry
+              <!--List Item Two-->
+              <div class="listItem french-onion">
+                <h4>
+                  french onion soup
+                  <p>$10</p>
+                </h4>
+                <p class="ingredients">
+                  Beef Broth / Chopped Onion / Dry Sherry
                 </p>
-            </li>
-            <!--Item Three-->
-            <li>
-                <div class="flexPrice">
-                  <h4 class="mealName">wedge with bleu cheese and smoked bacon</h4>
-                  <h4 class="price">$12</h4>
-                </div>
-                <p class="ingredients">Iceberg Lettuce / Bacon / Bleu Cheese
-                </p>
-              </li>
-              <!--Item Four-->
-              <li>
-                <div class="flexPrice">
-                  <h4 class="mealName">tuna tartare with avocado</h4>
-                  <h4 class="price">$15</h4>
-                </div>
-                  <p class="ingredients">Tuna/ Chopped Scallion / Avocado</p>
-              </li>
-              <!--Item Five-->
-              <li>
-                <div class="flexPrice">
-                  <h4 class="mealName">ceasar salad with free range chicken</h4>
-                  <h4 class="price">$20</h4>
-                </div>
-                  <p class="ingredients">Chicken / IceBerg Lettuce / Dressing</p>
-              </li>
-          </ul>
-        </div>
-        <!--Second Block Starts Here-->
-        <div class="block1" id="mainMeal">
-            <ul class="listContain">
-              <h2  class="mealType">main</h2>
-              <li>
-                <div class="flexPrice">
-                  <h4 class="mealName">pork tenderloin in green pepper</h4>
-                  <h4 class="price">$20</h4>
-                </div>
-                <p class="ingredients">Pork / tenderloin / green pepper
-                </p>
-              </li>
-              <!--Item Two-->
-              <li>
-                  <div class="flexPrice">
-                    <h4 class="mealName">shrimp with garlic</h4>
-                    <h4 class="price">$17</h4>
-                  </div>
-                  <p class="ingredients">shrimp / garlic / veggies
-                  </p>
-              </li>
-              <!--Item Three-->
-              <li>
-                  <div class="flexPrice">
-                    <h4 class="mealName">wild mushroom with chicken</h4>
-                    <h4 class="price">$20</h4>
-                  </div>
-                  <p class="ingredients">chicken / mushroom / veggies
-                  </p>
-                </li>
-                <!--Item Four-->
-                <li>
-                  <div class="flexPrice">
-                    <h4 class="mealName">oysters with baked potatoes</h4>
-                    <h4 class="price">$20</h4>
-                  </div>
-                    <p class="ingredients">oysters/ potatoes / veggies</p>
-                </li>
-                <!--Item Five-->
-                <li>
-                  <div class="flexPrice">
-                    <h4 class="mealName">roast pork</h4>
-                    <h4 class="price">$20</h4>
-                  </div>
-                    <p class="ingredients">Pork / tenderloin /green pepper / potatoes</p>
-                </li>
-                  <!--Item Six-->
-                <li>
-                  <div class="flexPrice">
-                    <h4 class="mealName">roast chicken with potatoes</h4>
-                    <h4 class="price">$20</h4>
-                  </div>
-                    <p class="ingredients">Roasted Cheicken / Baby Potatoes / Onions</p>
-                </li>
-            </ul>
+              </div>
+              <!--List Item Three-->
+              <div class="listItem wedge-cheese">
+                <h4>
+                  Bleu Cheese Wedge W/ Smoked Bacon
+                  <p>$12</p>
+                </h4>
+                <p class="ingredients">Potato / Bleu Cheese / Bacon</p>
+              </div>
+              <!--List Item Four-->
+              <div class="listItem tuna-Tartare">
+                <h4>
+                  Tuna Tartare With Avocado
+                  <p>$15</p>
+                </h4>
+                <p class="ingredients">Tuna / Chopped Scallion / Avocado</p>
+              </div>
+              <!--List Item Five-->
+              <div class="listItem Ceasar-Salad">
+                <h4>
+                  Ceasar Salad With Free Range Chicken
+                  <p>$10</p>
+                </h4>
+                <p class="ingredients">Chicken / IceBerg Lettuce / Dressing</p>
+              </div>
+            </div>
+            <!--Menu List Ending Div-->
           </div>
-          <!--Third Block Starts Here-->
-          <div class="block1" id="starters">
-              <ul class="listContain">
-                <h2  class="mealType">desserts</h2>
-                <li>
-                  <div class="flexPrice">
-                    <h4 class="mealName">flourless chocolate espresso cake</h4>
-                    <h4 class="price">$10</h4>
-                  </div>
-                  <p class="ingredients">Chocolate Chips / Espresso Powder / Cocoa Powder
-                  </p>
-                </li>
-                <!--Item Two-->
-                <li>
-                    <div class="flexPrice">
-                      <h4 class="mealName">coconut creme pie</h4>
-                      <h4 class="price">$10</h4>
-                    </div>
-                    <p class="ingredients">Flaked Coconut / Vanilla Extract / Whipped Cream
-                    </p>
-                </li>
-                <!--Item Three-->
-                <li>
-                    <div class="flexPrice">
-                      <h4 class="mealName">warm apple crostata</h4>
-                      <h4 class="price">$10</h4>
-                    </div>
-                    <p class="ingredients">Empire Apples / Ground Cinnamon / Orange Zest
-                    </p>
-                  </li>
-                  <!--Item Four-->
-                  <li>
-                    <div class="flexPrice">
-                      <h4 class="mealName">the mixologist cheesecake</h4>
-                      <h4 class="price">$10</h4>
-                    </div>
-                      <p class="ingredients">Graham Crackers/ Cream Cheese / Sugar</p>
-                  </li>
-                  <!--Item Five-->
-                  <li>
-                    <div class="flexPrice">
-                      <h4 class="mealName">hand crafted ice cream</h4>
-                      <h4 class="price">$10</h4>
-                    </div>
-                      <p class="ingredients">Whole Milk / Heavy Cream / Vanilla Extract</p>
-                  </li>
-              </ul>
-            </div> 
-      </section>
+          <!--bckCard Ending Div-->
+        </div>
+        <!--innerCards Endind Div-->
+      </div>
+      <!--starters Card Ending Div-->
+      <div class="menuCard mainCourseCard">
+        <div class="innerCard">
+          <div class="frntCard"><img src="img/vertSalmon.jpg" /></div>
+          <div class="bckCard">
+            <h3 class="menuName">main</h3>
+            <div class="menuList">
+              <div class="listItem pork-tenderloin">
+                <h4>
+                  Pork Tenderloin In Green Pepper
+                  <p>$20</p>
+                </h4>
+                <p class="ingredients">Pork / Veggies / Green Pepper</p>
+              </div>
+              <!--List Item Two-->
+              <div class="listItem shrimp-garlic">
+                <h4>
+                  shrimp with garlic
+                  <p>$17</p>
+                </h4>
+                <p class="ingredients">Shrimp / Garlic / Veggies</p>
+              </div>
+              <!--List Item Three-->
+              <div class="listItem wedge-cheese">
+                <h4>
+                  Wild Mushroom W/ Chicken
+                  <p>$20</p>
+                </h4>
+                <p class="ingredients">Chicken / Mushroom / Veggies</p>
+              </div>
+              <!--List Item Four-->
+              <div class="listItem tuna-Tartare">
+                <h4>
+                  Oysters W/ Baked Potatoes
+                  <p>$20</p>
+                </h4>
+                <p class="ingredients">Oysters / Potatoes / Veggies</p>
+              </div>
+              <!--List Item Five-->
+              <div class="listItem Ceasar-Salad">
+                <h4>
+                  Filet Mignon
+                  <p>$20</p>
+                </h4>
+                <p class="ingredients">Steak / Garlic Potatoes / Veggies</p>
+              </div>
+            </div>
+            <!--Menu List Ending Div-->
+          </div>
+          <!--bckCard Ending Div-->
+        </div>
+        <!--innerCards Endind Div-->
+      </div>
+      <!--Dessert Card Ending Div-->
+      <div class="menuCard DessertCard">
+        <div class="innerCard">
+          <div class="frntCard"><img src="img/vertDessert2.jpg" /></div>
+          <div class="bckCard">
+            <h3 class="menuName">Dessert</h3>
+            <div class="menuList">
+              <div class="listItem espressoCake">
+                <h4>
+                  Flourless Chocolate Espresso Cake
+                  <p>$10</p>
+                </h4>
+                <p class="ingredients">
+                  Chocolate Chips / Espresso Powder / Cocoa Powder
+                </p>
+              </div>
+              <!--List Item Two-->
+              <div class="listItem cremePie">
+                <h4>
+                  Coconut Creme Pie
+                  <p>$10</p>
+                </h4>
+                <p class="ingredients">
+                  Flaked Coconut / Vanilla Extract / Whipped Cream
+                </p>
+              </div>
+              <!--List Item Three-->
+              <div class="listItem appleCrostata">
+                <h4>
+                  Warm Apple Crostata
+                  <p>$10</p>
+                </h4>
+                <p class="ingredients">
+                  Empire Apples / Ground Cinnamon / Orange Zest
+                </p>
+              </div>
+              <!--List Item Four-->
+              <div class="listItem CheeseCake">
+                <h4>
+                  The Mixologist CheeseCake
+                  <p>$10</p>
+                </h4>
+                <p class="ingredients">
+                  Graham Crackers / Cream Cheese / Sugar
+                </p>
+              </div>
+              <!--List Item Five-->
+              <div class="listItem iceCream">
+                <h4>
+                  Hand Crafted IceCream
+                  <p>$10</p>
+                </h4>
+                <p class="ingredients">
+                  Whole Milk / Heavy Cream / Vanilla Extract
+                </p>
+              </div>
+            </div>
+            <!--Menu List Ending Div-->
+          </div>
+          <!--bckCard Ending Div-->
+        </div>
+        <!--innerCards Endind Div-->
+      </div>
+      <!--Dessert Card Ending Div-->
+    </div>
+    <!--menuCards Ending div-->
     <section class="signatureDishes">
       <div class="signatureText">
         <h3>explore</h3>
@@ -216,93 +247,111 @@
       <div class="signatureColumn">
         <div class="dish" id="dishOne">
           <div class="dishText">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            <div class="flexPrice">
-              <h3>filet mignon with mushroom red wine sauce</h3>
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h3 class="menuMealName">
+              filet mignon with mushroom red wine sauce
               <p>$20</p>
-            </div>
-              <p>Beef / Mushroom / Green Peppers / Veggies</p>
+            </h3>
+            <p>Beef / Mushroom / Green Peppers / Veggies</p>
           </div>
-          <div class="sigPhoto">
-            <img src="img/dish-3.jpg">
-          </div>
+          <div class="sigPhoto"><img src="img/dish-3.jpg" /></div>
         </div>
         <!--Signature Dish #2-->
         <div class="dish" id="dishTwo">
-            <div class="dishText">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              <div class="flexPrice">
-                <h3>filet mignon with mushroom red wine sauce</h3>
-                <p>$20</p>
-              </div>
-                <p>Beef / Mushroom / Green Peppers / Veggies</p>
-            </div>
-            <div class="sigPhoto">
-              <img src="img/sig2.jpg">
-            </div>
-        </div>
-          <!--signature Dish #3-->
-          <div class="dish" id="dishThree">
-              <div class="dishText">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                <div class="flexPrice">
-                  <h3>filet mignon with mushroom red wine sauce</h3>
-                  <p>$20</p>
-                </div>
-                  <p>Beef / Mushroom / Green Peppers / Veggies</p>
-              </div>
-              <div class="sigPhoto">
-                <img src="img/sig3.jpg">
-              </div>
+          <div class="dishText">
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h3 class="menuMealName">
+              Salmon over roasted garlic potatoes and sauce
+              <p>$20</p>
+            </h3>
+            <p>Fish / Mushroom / Garlic / potatoes</p>
           </div>
+          <div class="sigPhoto"><img src="img/sig2.jpg" /></div>
+        </div>
+        <!--signature Dish #3-->
+        <div class="dish" id="dishThree">
+          <div class="dishText">
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <h3 class="menuMealName">
+              Fresh New York Strip with steak sauce
+              <p>$20</p>
+            </h3>
+            <p>Beef / Carrot / Green Peppers / Veggies</p>
+          </div>
+          <div class="sigPhoto"><img src="img/sig3.jpg" /></div>
+        </div>
       </div>
     </section>
-    <div class="globalReservation">
-        <div class="reserveTitle">
-          <h3>plan ahead</h3>
-          <h1>make a reservation</h1>
-        </div>
-        <form name="newForm" id="reservationForm">
-            <input type="text" placeholder="Name" id="name"
-            name="firstLast">
-            <input type="text" placeholder="Date/Time" id="date" name="dateTime">
-            <input type="text"placeholder="Party Size" id="partySize">
-            <input type="submit" value="Submit Reservation" class="resSubmitBtn" id="submitBtn">
-          </form>
-    </div>
     <footer class="globalFoot">
-      <div class="textContain">
-        <h1>the mixologist</h1>
-        <p class="copyright">Copyright &copy;2018 All rights reserved</p>
+      <div class="reserveTitle">
+        <h3>plan ahead</h3>
+        <h1>make a reservation</h1>
       </div>
-      <div class="footerContact">
-        <ul>
-          <li>
-            <h4>address</h4>
-            <p>502 cherokee st, St. Louis MO, 63101</p>
-          </li>
-          <li>
-            <h4>phone</h4>
-            <p>(314)555-5555</p>
-          </li>
-          <li>
-            <h4>email</h4>
-            <p>themixologist@gmail.com</p>
-          </li>
-        </ul>
-      </div>
+      <form name="newForm" id="reservationForm">
+        <input
+          type="text"
+          placeholder="Name"
+          class="input inputName"
+          name="firstLast"
+        />
+        <input
+          type="text"
+          placeholder="Date"
+          class="input inputDate"
+          name="date"
+        />
+        <input
+          type="text"
+          placeholder="Time"
+          class="input inputTime"
+          name="Time"
+        />
+        <input
+          type="text"
+          placeholder="Party Size"
+          class="input inputPartySize"
+        />
+        <input
+          type="text"
+          placeholder="Phone"
+          class="input inputPhone"
+          name="Phone"
+        />
+        <input
+          type="submit"
+          value="Submit Reservation"
+          class="resSubmitBtn"
+          id="submitBtn"
+        />
+      </form>
+      <section class="footerMenu">
+        <div class="textContain">
+          <h1>the mixologist</h1>
+          <p class="copyright">Copyright &copy;2018 All rights reserved</p>
+        </div>
+        <div class="footerContact">
+          <ul>
+            <li>
+              <h4>address</h4>
+              <p>502 cherokee st, St. Louis MO, 63101</p>
+            </li>
+            <li>
+              <h4>phone</h4>
+              <p>(314)555-5555</p>
+            </li>
+            <li>
+              <h4>email</h4>
+              <p>themixologist@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </footer>
 
     <script src="app.js"></script>

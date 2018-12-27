@@ -1,0 +1,384 @@
+.homeShow {
+  @include Background(url(../img/bg_5.jpg));
+  height: 100vh;
+  width: 100%;
+}
+.somethingNewContain {
+  @include Display(row, center, center);
+  margin-top: 100px;
+}
+.sideImgs {
+  //responsive
+  @include Laptop {
+    width: 530px;
+    @include Display(row, unset, unset);
+  }
+  @include Tablet {
+    width: 400px;
+  }
+  @include Mobile {
+    display: none;
+  }
+}
+.bartenderImg,
+.salmonImg {
+  height: 380px;
+  width: 310px;
+  border-radius: 6px;
+  //responsive
+  @include Laptop {
+    width: 280px;
+  }
+  @include Tablet {
+    width: 200px;
+  }
+}
+.whtWeBring {
+  background-color: #fff;
+  margin-left: -40px;
+  height: 320px;
+  width: 500px;
+  z-index: 2;
+  border: 3px solid #d3c186;
+  border-radius: 6px;
+  box-shadow: 10px 10px 30px #50505062;
+  text-align: left;
+  padding: 10px 10px 10px 30px;
+  h3 {
+    font-family: $secFont;
+    font-size: 20px;
+    font-weight: lighter;
+    color: $secGold;
+    text-transform: capitalize;
+    padding-top: 40px;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: lightere;
+    color: $primary-font;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+  }
+  p {
+    font-weight: lighter;
+    color: $primary-font;
+    width: 400px;
+    line-height: 26px;
+    //responsive
+    @include Tablet {
+      line-height: 18px;
+    }
+  }
+  //Responsive
+  @include Laptop {
+    width: 440px;
+    margin-left: 0px;
+  }
+  @include Tablet {
+    width: 350px;
+  }
+}
+.soulFoodContain {
+  margin-top: 100px;
+  height: 56vh;
+}
+.foodDesc {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  padding-top: 176px;
+  h3 {
+    font-family: $secFont;
+    font-size: 30px;
+    font-weight: lighter;
+    color: $secGold;
+    text-transform: capitalize;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: $secGold;
+    text-transform: capitalize;
+  }
+}
+#videoBackground {
+  width: 100%;
+  height: 80vh;
+  object-fit: fill;
+  zoom: 0.7;
+}
+//Signature Dishes
+.signatureContain {
+  @include Display(row, center, center);
+  margin-top: 100px;
+}
+.sigText {
+  height: 320px;
+  width: 500px;
+  margin-right: -40px;
+  background-color: #ffffff;
+  z-index: 2;
+  border: 3px solid $secGold;
+  border-radius: 6px;
+  box-shadow: 10px 10px 30px #50505062;
+  text-align: left;
+  padding: 30px 0 0 30px;
+  h3 {
+    font-family: $secFont;
+    font-size: 26px;
+    font-weight: lighter;
+    color: $secGold;
+    text-transform: capitalize;
+    padding-bottom: 6px;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    color: $primary-font;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+  }
+  //Responsive
+  @include Mobile {
+    width: 400px;
+    margin-right: 0;
+  }
+}
+.rating {
+  .fa-star {
+    color: $secGold;
+    font-size: 14px;
+    padding-bottom: 8px;
+  }
+}
+.mealName {
+  font-size: 18px;
+  font-weight: lighter;
+  color: $primaryFColor;
+  text-transform: capitalize;
+  padding-bottom: 8px;
+  p {
+    width: 30px;
+    display: inline-flex;
+    padding-left: 70px;
+  }
+}
+.ingredients {
+  text-transform: capitalize;
+  font-weight: lighter;
+  color: #5c5c5c;
+  margin-top: -10px;
+}
+.moreDish {
+  padding-top: 40px;
+  a {
+    font-size: 18px;
+    font-weight: lighter;
+    color: $secGold;
+    text-transform: capitalize;
+    border: 1px solid $secGold;
+    border-radius: 6px;
+    padding: 10px 14px 10px 14px;
+    transition: 0.6s;
+  }
+  a:hover {
+    @include btnEffect;
+    color: #e7e7e7;
+  }
+}
+.filetphto {
+  img {
+    height: 380px;
+    width: 600px;
+    border-radius: 6px;
+    //Responsive
+    @include Laptop {
+      width: 550px;
+    }
+    @include Mobile {
+      display: none;
+    }
+  }
+}
+.menuBanner {
+  height: 16vh;
+  width: 1022px;
+  background-color: #211b06;
+  border-radius: 6px;
+  margin-top: 100px;
+  margin-left: 200px;
+  position: absolute;
+  //Responsive
+  @include Laptop {
+    margin-left: 70px;
+    width: 900px;
+  }
+  @include Tablet {
+    width: 700px;
+    margin-left: 40px;
+  }
+  @include Mobile {
+    width: 400px;
+    margin-left: 10px;
+  }
+}
+.innerBorder {
+  height: 12vh;
+  width: 1002px;
+  border: 1px solid #d3c186;
+  border-radius: 6px;
+  margin-top: 16px;
+  margin-left: 10px;
+  //responsive
+  @include Laptop {
+    width: 880px;
+  }
+  @include Tablet {
+    width: 680px;
+  }
+  @include Mobile {
+    width: 380px;
+  }
+}
+.theMenu {
+  text-align: center;
+  h3 {
+    font-family: $primary-font;
+    font-size: 26px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: $secGold;
+    background-color: #211b06;
+    width: 100px;
+    margin-top: -10px;
+    margin-left: 450px;
+    //Responsive
+    @include Laptop {
+      margin-left: 390px;
+    }
+    @include Tablet {
+      margin-left: 290px;
+    }
+    @include Mobile {
+      margin-left: 140px;
+    }
+  }
+  h1 {
+    font-size: 30px;
+    color: $secGold;
+    text-transform: capitalize;
+  }
+  .fa-utensils {
+    font-size: 22px;
+    color: $secGold;
+    margin-top: 24px;
+    background-color: #211b06;
+    width: 40px;
+    //Responsive
+    @include Mobile {
+      margin-top: 20px;
+    }
+  }
+}
+//Menu Card
+.menuContainer {
+  width: 1024px;
+  margin-top: 300px;
+  margin-left: 202px;
+  @include Display(row, space-evenly, center);
+  //Responsive
+  @include Laptop {
+    margin-left: 0px;
+  }
+  @include Mobile {
+    @include Display(column, unset, unset);
+    margin-left: 50px;
+    width: 330px;
+  }
+}
+.menuCard {
+  height: 600px;
+  width: 330px;
+  background-color: transparent;
+  //Responsive
+  @include Mobile {
+    padding-top: 20px;
+  }
+}
+.innerCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transform-style: preserve-3d;
+  transition: 0.7s;
+  border: 2px solid $secGold;
+}
+.menuCard:hover {
+  zoom: 1.1;
+  .innerCard {
+    transform: rotateY(180deg);
+    box-shadow: 2px 2px 8px #303030;
+  }
+}
+.frntCard,
+.bckCard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.frntCard {
+  background-color: $secGold;
+  color: black;
+  z-index: 2;
+  img {
+    height: 100%;
+  }
+}
+.bckCard {
+  background-color: #e7e7e7;
+  color: $secGold;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+.menuName {
+  font-family: $secFont;
+  font-size: 30px;
+  font-weight: lighter;
+  color: $secGold;
+  text-transform: capitalize;
+  text-align: center;
+  border: 1px solid $secGold;
+  border-radius: 4px;
+  padding: 10px;
+  width: 140px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.menuList {
+  padding-top: 30px;
+  .listItem {
+    padding-top: 20px;
+    padding-left: 20px;
+    h4 {
+      font-family: $primary-font;
+      font-size: 18px;
+      font-weight: lighter;
+      text-transform: capitalize;
+      color: #303030;
+      width: 280px;
+      @include Display(row, space-between, unset);
+      p {
+        padding-left: 40px;
+      }
+      @include Tablet {
+        font-size: 14px;
+      }
+    }
+    .ingredients {
+      padding-top: 20px;
+    }
+  }
+}

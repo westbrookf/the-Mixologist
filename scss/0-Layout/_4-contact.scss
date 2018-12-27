@@ -1,0 +1,95 @@
+.contactShow {
+  @include Background(url(../img/contactbg.jpg));
+  height: 60vh;
+  width: 100%;
+}
+.contactInfoContainer {
+  width: 1022px;
+  @include Display(row, space-between, center);
+  margin-top: 100px;
+  margin-left: 200px;
+  //Responsive
+  @include Laptop {
+    width: 900px;
+    margin-left: 60px;
+  }
+  @include Tablet {
+    width: 700px;
+  }
+  @include Mobile {
+    @include Display(column, unset, unset);
+    margin-left: 0px;
+    width: 400px;
+  }
+}
+.contactText {
+  width: 500px;
+  text-align: left;
+  @include Display(column, flex-start, unset);
+  h1 {
+    font-size: 36px;
+    font-weight: lighter;
+    color: $primaryFColor;
+    text-transform: capitalize;
+  }
+  p {
+    font-weight: lighter;
+    color: $primaryFColor;
+    padding-top: 30px;
+  }
+  //Contact Text Responsive
+  @include Laptop {
+    width: 360px;
+  }
+  @include Tablet {
+    width: 240px;
+  }
+  @include Mobile {
+    width: 100%;
+    text-align: center;
+  }
+}
+.contactLogo {
+  font-size: 40px;
+  font-weight: lighter;
+  color: $primaryFColor;
+  text-transform: capitalize;
+  padding-top: 40px;
+}
+.restaurant {
+  font-size: 20px;
+  font-weight: lighter;
+  color: $primaryFColor;
+  text-transform: capitalize;
+  letter-spacing: 15px;
+}
+.contactLinks {
+  width: 400px;
+  height: 200px;
+  border: 3px solid $secGold;
+  border-radius: 6px;
+  padding: 12px 40px 0 40px;
+  li {
+    display: flex;
+    padding-top: 30px;
+    h4 {
+      padding-right: 10px;
+    }
+  }
+  //Contact Links Responsive
+  @include Mobile {
+    width: 360px;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+}
+#maps {
+  height: 400px;
+  width: 1022px;
+  margin-top: 100px;
+  margin-left: 200px;
+  //Responsive
+  @include Laptop {
+    margin-left: 0px;
+  }
+}

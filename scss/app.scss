@@ -1,0 +1,33 @@
+@import "1-variables/variables";
+
+@import "2-mixins/mixins";
+
+@import "0-Layout/layoutDir";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  max-width: 100%;
+}
+body {
+  background-color: #e9e9e9;
+}
+//Page Index
+.pageIndex {
+  margin-top: 40px;
+  margin-left: 60px;
+
+  a {
+    font-family: "Allura", cursive;
+    font-size: 26px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: #303030;
+  }
+  a:hover {
+    color: #e3d194;
+  }
+}

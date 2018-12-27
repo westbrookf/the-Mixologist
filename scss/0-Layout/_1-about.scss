@@ -1,0 +1,332 @@
+.aboutShow {
+  @include Background(url(../img/aboutBg.jpg));
+  height: 60vh;
+  width: 100%;
+}
+.aboutUs {
+  @include Display(row, space-evenly, center);
+  margin-top: 100px;
+}
+.imgContain {
+  img {
+    height: 380px;
+    width: 500px;
+    border-radius: 6px;
+  }
+  //responsive
+  @include Mobile {
+    display: none;
+  }
+}
+.aboutTextContainer {
+  height: 320px;
+  width: 500px;
+  border: 2px solid $secGold;
+  border-radius: 6px;
+  box-shadow: 10px 10px 30px #50505062;
+  margin-left: -260px;
+  background-color: #fff;
+  padding: 10px 10px 10px 30px;
+  h3 {
+    font-family: $secFont;
+    font-size: 26px;
+    font-weight: lighter;
+    color: $secGold;
+    text-transform: capitalize;
+    padding-top: 30px;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    color: $primary-font;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+  }
+  p {
+    font-weight: lighter;
+    color: $primary-font;
+    width: 400px;
+    line-height: 26px;
+  }
+  //Responsive
+  @include Laptop {
+    margin-left: -130px;
+  }
+  @include Mobile {
+    margin-left: 0px;
+  }
+}
+.chefWrapper {
+  margin-top: 140px;
+}
+.chefIntro {
+  margin-top: 140px;
+}
+.introText {
+  margin-left: 140px;
+  h3 {
+    font-family: $secFont;
+    font-size: 26px;
+    font-weight: lighter;
+    color: $secGold;
+    text-transform: capitalize;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: $primary-font;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+  }
+  //IntroText responsive
+  @include Tablet {
+    margin-left: 50px;
+  }
+}
+.aboutourChefs {
+  @include Display(row, space-evenly, center);
+  padding-top: 40px;
+  p {
+    font-size: 18px;
+    width: 500px;
+    line-height: 36px;
+    //responsive
+    @include Tablet {
+      width: 450px;
+    }
+    @include Mobile {
+      width: 370px;
+      text-align: center;
+      padding-left: 60px;
+    }
+  }
+  //about our Chefs Responsive
+  @include Mobile {
+    @include Display(column, unset, unset);
+  }
+}
+.chefBlock {
+  height: 60vh;
+  width: 100%;
+  //responsive
+  @include Mobile {
+    height: 160vh;
+  }
+}
+#chefRow {
+  width: 1100px;
+  @include Display(row, space-between, center);
+  margin-top: 60px;
+  margin-left: 150px;
+  //Responsive
+  @include Laptop {
+    margin-left: 0px;
+  }
+  @include Mobile {
+    @include Display(column, unset, unset);
+    margin-left: 70px;
+    width: 280px;
+  }
+}
+.imgWrapper {
+  height: 370px;
+  width: 340px;
+  border-radius: 4px;
+  transition: 1s;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 8px 8px 30px #3f3f3f7c;
+  img {
+    height: 370px;
+    width: 340px;
+    //responsive
+    @include Tablet {
+      width: 280px;
+    }
+  }
+  //Image Wrapper responsive
+  @include Tablet {
+    width: 280px;
+  }
+  @include Mobile {
+    margin-top: 20px;
+  }
+}
+.modalContain {
+  display: none;
+}
+#andrewContain,
+#daveContain,
+#carieContain {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.backLayer {
+  height: 370px;
+  width: 340px;
+  position: absolute;
+  margin-top: -374px;
+  background-color: #2e2c2c64;
+  //responsive
+  @include Tablet {
+    width: 256px;
+  }
+  @include Mobile {
+    width: 280px;
+  }
+}
+.miniBio {
+  text-align: center;
+  height: 370px;
+  width: 340px;
+  transition: 0.6s;
+  opacity: 0.9;
+  .chefsName {
+    font-size: 38px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: lighter;
+  }
+  .chefTitle {
+    font-family: $secFont;
+    font-size: 26px;
+    color: $primaryGold;
+    text-transform: capitalize;
+  }
+}
+//Chef Bio
+#andrewBio,
+#daveMod,
+#carieBio {
+  height: 500px;
+  width: 800px;
+  background-color: #e9e9e9;
+  border-radius: 6px;
+  box-shadow: 10px 10px 40px #3c3c3c5a;
+  margin-top: 100px;
+  margin-left: 300px;
+  //Responsive
+  @include Laptop {
+    margin-left: 100px;
+  }
+  @include Tablet {
+    width: 600px;
+    margin-left: 80px;
+  }
+}
+.closeBtn {
+  padding-top: 10px;
+  padding-left: 60px;
+  p {
+    font-size: 36px;
+    color: $primaryGold;
+    cursor: pointer;
+    width: 10px;
+  }
+}
+.bioThumbnail {
+  img {
+    height: 240px;
+    width: 400px;
+    margin-top: -20px;
+    margin-left: 200px;
+    border-radius: 4px;
+    //Responsive
+    @include Tablet {
+      width: 350px;
+      margin-left: 120px;
+    }
+  }
+}
+.bioTitle {
+  text-align: center;
+  .bioName {
+    font-size: 30px;
+    font-weight: lighter;
+    color: $primary-font;
+    text-transform: capitalize;
+  }
+  .profession {
+    font-family: $secFont;
+    font-size: 26px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: $primaryGold;
+  }
+  .professionDesc {
+    font-size: 18px;
+    font-weight: lighter;
+    width: 506px;
+    margin-left: 146px;
+    //Responsive
+    @include Tablet {
+      width: 450px;
+      margin-left: 70px;
+    }
+  }
+}
+.testContain {
+  @include Background(url(../img/post1.jpg));
+  height: 60vh;
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 140px;
+  text-align: center;
+}
+.testimonialTitle {
+  padding-top: 100px;
+  h3 {
+    font-family: $secFont;
+    font-size: 26px;
+    font-weight: lighter;
+    color: $primaryGold;
+    text-transform: capitalize;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    color: #e7e7e7;
+    text-transform: capitalize;
+    padding-bottom: 40px;
+  }
+}
+.fa-quote-left {
+  font-size: 20px;
+  color: $primaryGold;
+  padding-bottom: 30px;
+}
+.testimonial {
+  width: 740px;
+  margin-left: 340px;
+  p {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #e7e7e7;
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: $primaryGold;
+    text-transform: capitalize;
+    padding-top: 20px;
+  }
+  //testimonial Responsive
+  @include Laptop {
+    margin-left: 140px;
+  }
+  @include Tablet {
+    margin-left: 100px;
+    width: 600px;
+  }
+  @include Mobile {
+    width: 400px;
+    margin-left: 10px;
+  }
+}

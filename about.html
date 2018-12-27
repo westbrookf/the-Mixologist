@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"   content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!--Main CSS-->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/app.css" />
     <!--Typography-->
-    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Allura"
+      rel="stylesheet"
+    />
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-POYwD7xcktv3gUeZO5s/9nUbRJG/WOmV6jfEGikMJu77LGYO8Rfs2X7URG822aum" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-POYwD7xcktv3gUeZO5s/9nUbRJG/WOmV6jfEGikMJu77LGYO8Rfs2X7URG822aum"
+      crossorigin="anonymous"
+    />
     <title>Venue</title>
   </head>
   <body>
-    <header class="aboutShowcase">
+    <header class="pageShowcase aboutShow">
       <div class="flexBars" id="openNav">
-        <span class="bars"></span>
-        <span class="bars"></span>
+        <span class="bars"></span> <span class="bars"></span>
         <span class="bars"></span>
       </div>
-      <div class="homeMenu">
-            <div class="times" id="hideIcon">&times;</div>
+      <div class="navMenuContain">
+        <div class="times" id="hideIcon">&times;</div>
         <a href="index.html" class="mainLogo">
-          <img src="img/Mix Logo.jpg">
+          <img src="img/Mix Logo.jpg" />
         </a>
         <div class="navMenu">
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="menu.html">Menu</a>
-          <a href="blog.html">Blog</a>
+          <a href="index.html">Home</a> <a href="about.html">About Us</a>
+          <a href="menu.html">Menu</a> <a href="blog.html">Blog</a>
           <a href="contact.html">Contact Us</a>
         </div>
         <div class="mainReservationBtn">
@@ -37,17 +42,20 @@
       </div>
     </header>
     <div class="pageIndex">
-      <a href="index.html">Home /</a>
-      <a href="about.html">about us</a>
+      <a href="index.html">Home /</a> <a href="about.html">about us</a>
     </div>
     <section class="aboutUs">
-      <div class="imgContain">
-        <img src="img/image_2.jpg">
-      </div>
+      <div class="imgContain"><img src="img/image_2.jpg" /></div>
       <div class="aboutTextContainer">
         <h3>something about</h3>
         <h1>the mixologist</h1>
-        <p>The Mixologist Restaurant was founded by the Culver family in 1984, which eventually branched out to more than 300 franchised restaurants all over the US. The Mixologist is well-known for its Filet Mignon, which made the restaurant extremely famous. They also have other items which include salads, sandwiches, desserts, etc.</p>
+        <p>
+          The Mixologist Restaurant was founded by the Culver family in 1984,
+          which eventually branched out to more than 300 franchised restaurants
+          all over the US. The Mixologist is well-known for its Filet Mignon,
+          which made the restaurant extremely famous. They also have other items
+          which include salads, sandwiches, desserts, etc.
+        </p>
       </div>
     </section>
     <div class="chefWrapper">
@@ -57,88 +65,123 @@
           <h1>the best chefs</h1>
         </div>
         <div class="aboutourChefs">
-          <p>With 30 years between the three, our chefs Dave Johnson, Carie Bates, and Andrew Morgan have been passionate about cooking and delivering only the best meals to our customers. Dave, our head Chef is a no nonsense chef, every dish is inspected and given the Chefs OK by him.</p>
-          <p>If there’s one thing you need to know about our chefs, it’s this: They want to hear from you. If you have a question, a comment, a suggestion or a critique, let them know. They make a point of making themselves available in the dining halls, so feel free to walk right up and chat.</p>
+          <p>
+            With 30 years between the three, our chefs Dave Johnson, Carie
+            Bates, and Andrew Morgan have been passionate about cooking and
+            delivering only the best meals to our customers. Dave, our head Chef
+            is a no nonsense chef, every dish is inspected and given the Chefs
+            OK by him.
+          </p>
+          <p>
+            If there’s one thing you need to know about our chefs, it’s this:
+            They want to hear from you. If you have a question, a comment, a
+            suggestion or a critique, let them know. They make a point of making
+            themselves available in the dining halls, so feel free to walk right
+            up and chat.
+          </p>
         </div>
       </div>
       <div class="chefBlock">
         <div id="chefRow">
-          <div class="imgWrapper" data-text= "andrewImg" id="drew">
-            <img src="img/chef 2.jpg">
-            <div class="backLayer" data-modal= "andrewContain" id="andrewDesc"></div>
+          <div class="imgWrapper" data-text="andrewImg" id="drew">
+            <img src="img/chef 2.jpg" />
+            <div
+              class="backLayer"
+              data-modal="andrewContain"
+              id="andrewDesc"
+            ></div>
             <div class="miniBio" id="andrewImg">
-                <h3 class="chefsName">andrew morgan</h3>
-                <p class="chefTitle">Su Chef</p>
+              <h3 class="chefsName">andrew morgan</h3>
+              <p class="chefTitle">Su Chef</p>
             </div>
           </div>
-            <div class="imgWrapper" data-text="daveImg" id="dave">
-              <img src="img/stock1.jpeg">
-              <div class="backLayer" data-modal= "daveContain" id="daveBio"></div>
-              <div class="miniBio" id= "daveImg">
-                  <h3 class="chefsName">dave johnson</h3>
-                  <p class="chefTitle">head Chef</p>
-              </div>
+          <div class="imgWrapper" data-text="daveImg" id="dave">
+            <img src="img/stock1.jpeg" />
+            <div class="backLayer" data-modal="daveContain" id="daveBio"></div>
+            <div class="miniBio" id="daveImg">
+              <h3 class="chefsName">dave johnson</h3>
+              <p class="chefTitle">head Chef</p>
             </div>
-            <div class="imgWrapper" data-text="carieImg" id="carie">
-              <img src="img/stock2.jpeg">
-              <div class="backLayer" data-modal = "carieContain" id="abtCarie"></div>
-              <div class="miniBio" id="carieImg">
-                  <h3 class="chefsName">carie bates</h3>
-                  <p class="chefTitle">head pastry chef</p>
-              </div>
+          </div>
+          <div class="imgWrapper" data-text="carieImg" id="carie">
+            <img src="img/stock2.jpeg" />
+            <div
+              class="backLayer"
+              data-modal="carieContain"
+              id="abtCarie"
+            ></div>
+            <div class="miniBio" id="carieImg">
+              <h3 class="chefsName">carie bates</h3>
+              <p class="chefTitle">head pastry chef</p>
             </div>
+          </div>
         </div>
       </div>
       <!--Andrew Modal Starts Here-->
-      <div class= "modalContain" id="andrewContain">
+      <div class="modalContain" id="andrewContain">
         <div id="andrewBio">
           <div class="closeBtn">
-            <p class="exitModal" id="exitAndrew" data-exit= "andrewContain">&times;</p>
+            <p class="exitModal" id="exitAndrew" data-exit="andrewContain">
+              &times;
+            </p>
           </div>
-          <span class="bioThumbnail">
-            <img src="img/chef 2.jpg">
-          </span>
+          <span class="bioThumbnail"> <img src="img/chef 2.jpg" /> </span>
           <div class="bioTitle">
             <h3 class="bioName">andrew morgan</h3>
             <p class="profession">Su Chef</p>
             <p class="professionDesc">
-                Chef Andrew Morgan has cooked for some of the largest gatherings in St. Louis. At the Busch Stadium, Cardinals fans had a taste of his cuisine during the games, he catered food to baseball fans in the suites and Press Box, and even developed an appreciation for hot dogs. Now he creates memorable dining experiences at the Mixologist Restaurant for everyone to enjoy every day.
+              Chef Andrew Morgan has cooked for some of the largest gatherings
+              in St. Louis. At the Busch Stadium, Cardinals fans had a taste of
+              his cuisine during the games, he catered food to baseball fans in
+              the suites and Press Box, and even developed an appreciation for
+              hot dogs. Now he creates memorable dining experiences at the
+              Mixologist Restaurant for everyone to enjoy every day.
             </p>
           </div>
         </div>
       </div>
-        <!--Dave Modal Starts Here-->
+      <!--Dave Modal Starts Here-->
       <div id="daveContain" class="modalContain">
-          <div id="daveMod">
-            <div class="closeBtn">
-              <p class="exitModal" id="exitDave" data-exit= "daveContain">&times;</p>
-            </div>
-            <span class="bioThumbnail">
-              <img src="img/stock1.jpeg">
-            </span>
-            <div class="bioTitle">
-              <h3 class="bioName">dave johnson</h3>
-              <p class="profession">head Chef</p>
-              <p class="professionDesc">
-                With a culinary arts degree from The Culinary Institute of America and training in New York, Chicago and Detroit,Executive Chef Dave Johnson is truly A master of his craft. From Detroit’s elite kitchens he helped elevate the culinary experience at Michigan State Dining. 
-              </p>
-            </div>
+        <div id="daveMod">
+          <div class="closeBtn">
+            <p class="exitModal" id="exitDave" data-exit="daveContain">
+              &times;
+            </p>
           </div>
+          <span class="bioThumbnail"> <img src="img/stock1.jpeg" /> </span>
+          <div class="bioTitle">
+            <h3 class="bioName">dave johnson</h3>
+            <p class="profession">head Chef</p>
+            <p class="professionDesc">
+              With a culinary arts degree from The Culinary Institute of America
+              and training in New York, Chicago and Detroit,Executive Chef Dave
+              Johnson is truly A master of his craft. From Detroit’s elite
+              kitchens he helped elevate the culinary experience at Michigan
+              State Dining.
+            </p>
+          </div>
+        </div>
       </div>
       <!--Carie Modal Starts Here-->
       <div class="modalContain" id="carieContain">
         <div id="carieBio">
           <div class="closeBtn">
-            <p class="exitModal" id="exitCarie" data-exit= "carieContain">&times;</p>
+            <p class="exitModal" id="exitCarie" data-exit="carieContain">
+              &times;
+            </p>
           </div>
-          <span class="bioThumbnail">
-            <img src="img/stock2.jpeg">
-          </span>
+          <span class="bioThumbnail"> <img src="img/stock2.jpeg" /> </span>
           <div class="bioTitle">
             <h3 class="bioName">carie bates</h3>
             <p class="profession">head dessert Chef</p>
             <p class="professionDesc">
-              Since her first job at age 15 in a German restaurant, Chef Carie has immersed herself in contemporary global dessert cuisines. She absorbs the culture and applies what she learns to recipe development. Chef Carie owes her culinary expertise to on-the-job training, chef mentors and formal training at Schoolcraft College. Her food philosophy is simple: use fresh, local, seasonal and sustainable products to create well received dishes.
+              Since her first job at age 15 in a German restaurant, Chef Carie
+              has immersed herself in contemporary global dessert cuisines. She
+              absorbs the culture and applies what she learns to recipe
+              development. Chef Carie owes her culinary expertise to on-the-job
+              training, chef mentors and formal training at Schoolcraft College.
+              Her food philosophy is simple: use fresh, local, seasonal and
+              sustainable products.
             </p>
           </div>
         </div>
@@ -150,28 +193,59 @@
         <h3>what they say</h3>
         <h1>testimonials</h1>
       </div>
-      <span>
-        <i class="fas fa-quote-left"></i>
-      </span>
+      <span> <i class="fas fa-quote-left"></i> </span>
       <div class="testimonial">
-        <p>I could not ask for a better experience. The service was beyond amazing, and the sauce on the Filet Mignon is to die for. The Mixologist is truly a extraordinary experience.</p>
+        <p>
+          I could not ask for a better experience. The service was beyond
+          amazing, and the sauce on the Filet Mignon is to die for. The
+          Mixologist is truly a extraordinary experience.
+        </p>
         <h4>daniel smith</h4>
       </div>
     </div>
-    <div class="globalReservation">
-        <div class="reserveTitle">
-          <h3>plan ahead</h3>
-          <h1>make a reservation</h1>
-        </div>
-        <form name="newForm" id="reservationForm">
-          <input type="text" placeholder="Name" id="name"
-          name="firstLast">
-          <input type="text" placeholder="Date/Time" id="date" name="dateTime">
-          <input type="text"placeholder="Party Size" id="partySize">
-          <input type="submit" value="Submit Reservation" class="resSubmitBtn" id="submitBtn">
-        </form>
-    </div>
-      <footer class="globalFoot">
+    <footer class="globalFoot">
+      <div class="reserveTitle">
+        <h3>plan ahead</h3>
+        <h1>make a reservation</h1>
+      </div>
+      <form name="newForm" id="reservationForm">
+        <input
+          type="text"
+          placeholder="Name"
+          class="input inputName"
+          name="firstLast"
+        />
+        <input
+          type="text"
+          placeholder="Date"
+          class="input inputDate"
+          name="date"
+        />
+        <input
+          type="text"
+          placeholder="Time"
+          class="input inputTime"
+          name="Time"
+        />
+        <input
+          type="text"
+          placeholder="Party Size"
+          class="input inputPartySize"
+        />
+        <input
+          type="text"
+          placeholder="Phone"
+          class="input inputPhone"
+          name="Phone"
+        />
+        <input
+          type="submit"
+          value="Submit Reservation"
+          class="resSubmitBtn"
+          id="submitBtn"
+        />
+      </form>
+      <section class="footerMenu">
         <div class="textContain">
           <h1>the mixologist</h1>
           <p class="copyright">Copyright &copy;2018 All rights reserved</p>
@@ -192,7 +266,8 @@
             </li>
           </ul>
         </div>
-      </footer>
-      <script src="app.js"></script>
+      </section>
+    </footer>
+    <script src="app.js"></script>
   </body>
-</html>  
+</html>

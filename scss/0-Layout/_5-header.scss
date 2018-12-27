@@ -1,0 +1,97 @@
+#openNav,
+#hideIcon {
+  display: none;
+}
+.navMenuContain {
+  @include Display(row, unset, unset);
+  //Responsive
+  @include Mobile {
+    @include Display(column, unset, unset);
+  }
+}
+.mainLogo {
+  img {
+    height: 160px;
+    width: 240px;
+    border-radius: 6px;
+    margin-left: 60px;
+    //Responsive
+    @include Tablet {
+      width: 160px;
+      margin-left: 10px;
+    }
+    @include Mobile {
+      width: 240px;
+      margin-left: 90px;
+    }
+  }
+}
+.navMenu {
+  margin-top: 40px;
+  margin-left: 160px;
+  a {
+    font-size: 20px;
+    font-weight: lighter;
+    color: $secGold;
+    text-decoration: none;
+    padding-left: 40px;
+    //Responsive
+    @include Laptop {
+      padding-left: 10px;
+    }
+  }
+  //Nav Menu Responsive
+  @include Laptop {
+    margin-left: 60px;
+  }
+  @include Tablet {
+    margin-left: 10px;
+  }
+  @include Mobile {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+}
+.mainReservationBtn {
+  margin-top: 40px;
+  margin-left: 160px;
+  a {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #d3c186;
+    border: 1px solid #d3c186;
+    border-radius: 4px;
+    padding: 10px 20px 10px 20px;
+  }
+  //main reservation btn responsive
+  @include Laptop {
+    margin-left: 100px;
+  }
+  @include Tablet {
+    margin-left: 60px;
+  }
+  @include Mobile {
+    margin-left: 140px;
+  }
+}
+.innerQuote {
+  margin: 180px 0 0 60px;
+  text-align: center;
+  h3 {
+    font-family: $secFont;
+    font-size: 30px;
+    font-weight: lighter;
+    color: $secGold;
+    text-transform: capitalize;
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: $secGold;
+  }
+  //inner quote responsive
+  @include Mobile {
+    margin-left: 0;
+  }
+}
