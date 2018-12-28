@@ -264,7 +264,7 @@
     width: 40px; }
     @media only screen and (max-width: 425px) {
       .theMenu .fa-utensils {
-        margin-top: 20px; } }
+        margin-top: 12px; } }
 
 .menuContainer {
   width: 1024px;
@@ -1165,6 +1165,9 @@
   @media only screen and (max-width: 425px) {
     #reservationForm {
       margin-left: 0px; } }
+  @media only screen and (max-width: 414px) {
+    #reservationForm {
+      grid-template-columns: 390px; } }
 
 .footerMenu {
   display: flex;
@@ -1178,7 +1181,7 @@
       flex-direction: column;
       justify-content: unset;
       align-items: unset;
-      margin-top: 80px; } }
+      margin-top: 50px; } }
 
 .textContain {
   margin-left: 60px; }

@@ -73,6 +73,9 @@
   @include Mobile {
     margin-left: 0px;
   }
+  @include six-eightP {
+    grid-template-columns: 390px;
+  }
 }
 .footerMenu {
   @include Display(row, space-between, unset);
@@ -80,7 +83,7 @@
   //Responsive
   @include Mobile {
     @include Display(column, unset, unset);
-    margin-top: 80px;
+    margin-top: 50px;
   }
 }
 .textContain {
