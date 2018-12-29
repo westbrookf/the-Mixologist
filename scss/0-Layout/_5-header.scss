@@ -28,7 +28,7 @@
 }
 .navMenu {
   margin-top: 40px;
-  margin-left: 160px;
+  margin-left: 230px;
   a {
     font-size: 20px;
     font-weight: lighter;
@@ -45,16 +45,16 @@
     margin-left: 60px;
   }
   @include Tablet {
-    margin-left: 10px;
+    margin-left: 40px;
   }
   @include Mobile {
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 50px;
   }
 }
 .mainReservationBtn {
   margin-top: 40px;
-  margin-left: 160px;
+  margin-left: 270px;
   a {
     font-size: 18px;
     font-weight: lighter;
@@ -65,10 +65,10 @@
   }
   //main reservation btn responsive
   @include Laptop {
-    margin-left: 100px;
+    margin-left: 160px;
   }
   @include Tablet {
-    margin-left: 60px;
+    margin-left: 90px;
   }
   @include Mobile {
     margin-left: 140px;

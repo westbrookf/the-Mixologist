@@ -16,6 +16,10 @@
     @include Tablet {
       padding-left: 60px;
     }
+    @include Mobile {
+      padding-left: 0px;
+      text-align: center;
+    }
   }
   h1 {
     font-size: 40px;
@@ -76,6 +80,10 @@
   @include Tablet {
     padding-left: 60px;
   }
+  @include Mobile {
+    padding-left: 0px;
+    text-align: center;
+  }
 }
 .signatureColumn {
   width: 1022px;
@@ -87,7 +95,7 @@
   }
   @include Mobile {
     margin-left: 20px;
-    width: 400px;
+    width: 380px;
   }
 }
 .dish {

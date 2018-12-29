@@ -51,6 +51,10 @@
     color: $secGold;
     text-transform: capitalize;
     padding-top: 40px;
+    //Responsive
+    @include Mobile {
+      text-align: center;
+    }
   }
   h1 {
     font-size: 30px;
@@ -58,6 +62,10 @@
     color: $primary-font;
     text-transform: capitalize;
     padding-bottom: 20px;
+    //Responsive
+    @include Mobile {
+      text-align: center;
+    }
   }
   p {
     font-weight: lighter;
@@ -275,7 +283,7 @@
   .fa-utensils {
     font-size: 22px;
     color: $secGold;
-    margin-top: 24px;
+    margin-top: 20px;
     background-color: #211b06;
     width: 40px;
     //Responsive
@@ -318,7 +326,7 @@
   transition: 0.7s;
   border: 2px solid $secGold;
 }
-.menuCard:hover {
+.menuCard:after {
   zoom: 1.1;
   .innerCard {
     transform: rotateY(180deg);

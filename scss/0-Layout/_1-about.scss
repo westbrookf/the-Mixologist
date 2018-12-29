@@ -34,6 +34,10 @@
     color: $secGold;
     text-transform: capitalize;
     padding-top: 30px;
+    //Responsive
+    @include Mobile {
+      text-align: center;
+    }
   }
   h1 {
     font-size: 30px;
@@ -41,6 +45,9 @@
     color: $primary-font;
     text-transform: capitalize;
     padding-bottom: 20px;
+    @include Mobile {
+      text-align: center;
+    }
   }
   p {
     font-weight: lighter;
@@ -70,6 +77,10 @@
     font-weight: lighter;
     color: $secGold;
     text-transform: capitalize;
+    //Responsive
+    @include Mobile {
+      text-align: center;
+    }
   }
   h1 {
     font-size: 40px;
@@ -77,10 +88,16 @@
     color: $primary-font;
     text-transform: capitalize;
     padding-bottom: 30px;
+    @include Mobile {
+      text-align: center;
+    }
   }
   //IntroText responsive
   @include Tablet {
     margin-left: 50px;
+  }
+  @include Mobile {
+    margin-left: 0px;
   }
 }
 .aboutourChefs {
@@ -220,6 +237,9 @@
     width: 600px;
     margin-left: 80px;
   }
+  @include Mobile {
+    width: 300px;
+  }
 }
 .closeBtn {
   padding-top: 10px;
@@ -229,6 +249,15 @@
     color: $primaryGold;
     cursor: pointer;
     width: 10px;
+    //Responsive
+    @include Mobile {
+      font-size: 16px;
+    }
+  }
+  //Responsive
+  @include Mobile {
+    padding-top: 8px;
+    padding-left: 10px;
   }
 }
 .bioThumbnail {
@@ -242,6 +271,10 @@
     @include Tablet {
       width: 350px;
       margin-left: 120px;
+    }
+    @include Mobile {
+      width: 250px;
+      margin-left: 26px;
     }
   }
 }
@@ -269,6 +302,13 @@
     @include Tablet {
       width: 450px;
       margin-left: 70px;
+    }
+    @include Mobile {
+      width: 260px;
+      font-size: 14px;
+      margin-top: 10px;
+      margin-left: 20px;
+      text-align: center;
     }
   }
 }

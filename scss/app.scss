@@ -30,4 +30,8 @@ body {
   a:hover {
     color: #e3d194;
   }
+  //Responsive
+  @include Mobile {
+    margin-left: 30px;
+  }
 }
