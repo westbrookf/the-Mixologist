@@ -109,7 +109,8 @@
   zoom: 0.7; }
   @media only screen and (max-width: 425px) {
     #videoBackground {
-      zoom: unset; } }
+      zoom: unset;
+      height: 60vh; } }
 
 .signatureContain {
   display: flex;

@@ -110,6 +110,7 @@
   //responsive
   @include Mobile {
     zoom: unset;
+    height: 60vh;
   }
 }
 //Signature Dishes
