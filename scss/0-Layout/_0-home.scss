@@ -101,6 +101,10 @@
     color: $secGold;
     text-transform: capitalize;
   }
+  //Food Description
+  @include Mobile {
+    padding-top: 130px;
+  }
 }
 #videoBackground {
   width: 100%;

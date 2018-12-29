@@ -101,6 +101,9 @@
     font-weight: lighter;
     color: #d3c186;
     text-transform: capitalize; }
+  @media only screen and (max-width: 425px) {
+    .foodDesc {
+      padding-top: 130px; } }
 
 #videoBackground {
   width: 100%;
