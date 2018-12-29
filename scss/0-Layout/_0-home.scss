@@ -104,8 +104,8 @@
 }
 #videoBackground {
   width: 100%;
+  height: 56vh;
   object-fit: fill;
-  zoom: 0.7;
   //responsive
   @include Mobile {
     zoom: 0;
