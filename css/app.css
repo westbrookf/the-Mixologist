@@ -106,9 +106,6 @@
   width: 100%;
   height: 56vh;
   object-fit: fill; }
-  @media only screen and (max-width: 425px) {
-    #videoBackground {
-      zoom: 0; } }
 
 .signatureContain {
   display: flex;

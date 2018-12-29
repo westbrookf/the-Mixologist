@@ -106,10 +106,6 @@
   width: 100%;
   height: 56vh;
   object-fit: fill;
-  //responsive
-  @include Mobile {
-    zoom: 0;
-  }
 }
 //Signature Dishes
 .signatureContain {
