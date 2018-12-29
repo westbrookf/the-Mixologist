@@ -1056,7 +1056,8 @@
     color: #d3c186; }
   @media only screen and (max-width: 425px) {
     .innerQuote {
-      margin-left: 0; } }
+      margin-left: 0;
+      margin-top: 100px; } }
 
 .globalFoot {
   background: linear-gradient(to right, #30303078, #3030306d), url(../img/bg_6.jpg);
