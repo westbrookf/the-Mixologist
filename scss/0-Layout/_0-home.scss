@@ -326,7 +326,7 @@
   transition: 0.7s;
   border: 2px solid $secGold;
 }
-.menuCard:after {
+.menuCard:hover {
   zoom: 1.1;
   .innerCard {
     transform: rotateY(180deg);

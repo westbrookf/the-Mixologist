@@ -79,7 +79,10 @@
 }
 .footerMenu {
   @include Display(row, space-between, unset);
-  margin-top: 130px;
+  margin-top: 100px;
+  padding-top: 10px;
+  border-top: 1px solid $secGold;
+
   //Responsive
   @include Mobile {
     @include Display(column, unset, unset);
