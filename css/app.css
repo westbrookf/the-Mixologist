@@ -1075,7 +1075,7 @@
   background: linear-gradient(to right, #30303078, #3030306d), url(../img/bg_6.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin-top: 100px; }
 
