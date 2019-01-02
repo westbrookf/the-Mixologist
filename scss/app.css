@@ -599,7 +599,7 @@
 #andrewBio,
 #daveMod,
 #carieBio {
-  background-image: url(chef2.jpg);
+  background: linear-gradient(to right, #30303078, #3030306d), url(../img/stock1.jpeg);
   background-size: cover;
   background-position: center;
   height: 500px;

@@ -20,7 +20,8 @@
     />
     <!--Animate-->
     <link
-      src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"
     />
     <title>Venue</title>
   </head>
@@ -121,8 +122,8 @@
         </div>
       </div>
       <!--Andrew Modal Starts Here-->
-      <div class="modalContain" class="animated fadeIn" id="andrewContain">
-        <div id="andrewBio">
+      <div class="modalContain" id="andrewContain">
+        <div class="GlobalBio" id="andrewBio">
           <div class="closeBtn">
             <p class="exitModal" id="exitAndrew" data-exit="andrewContain">
               &times;
@@ -145,13 +146,12 @@
       </div>
       <!--Dave Modal Starts Here-->
       <div id="daveContain" class="modalContain">
-        <div id="daveMod">
+        <div class="GlobalBio" id="daveMod">
           <div class="closeBtn">
             <p class="exitModal" id="exitDave" data-exit="daveContain">
               &times;
             </p>
           </div>
-          <span class="bioThumbnail"> <img src="img/stock1.jpeg" /> </span>
           <div class="bioTitle">
             <h3 class="bioName">dave johnson</h3>
             <p class="profession">head Chef</p>
@@ -167,13 +167,12 @@
       </div>
       <!--Carie Modal Starts Here-->
       <div class="modalContain" id="carieContain">
-        <div id="carieBio">
+        <div class="GlobalBio" id="carieBio">
           <div class="closeBtn">
             <p class="exitModal" id="exitCarie" data-exit="carieContain">
               &times;
             </p>
           </div>
-          <span class="bioThumbnail"> <img src="img/stock2.jpeg" /> </span>
           <div class="bioTitle">
             <h3 class="bioName">carie bates</h3>
             <p class="profession">head dessert Chef</p>
@@ -272,5 +271,6 @@
       </section>
     </footer>
     <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
   </body>
 </html>

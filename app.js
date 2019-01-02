@@ -96,6 +96,12 @@ function openModal() {
   const modalId = this.attributes["data-modal"].value;
   const modal = document.getElementById(modalId);
   modal.style.display = "block";
+  anime({
+    targets: ".GlobalBio",
+    opacity: ["0", "1"],
+    duration: 600,
+    easing: "linear"
+  });
 }
 
 //Close Modal Btn

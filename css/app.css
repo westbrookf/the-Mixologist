@@ -332,7 +332,7 @@
     height: 100%; }
 
 .bckCard {
-  background-color: #e7e7e7;
+  background-color: #fff;
   color: #d3c186;
   transform: rotateY(180deg);
   z-index: 1; }
@@ -563,8 +563,8 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: #787878;
+  background-color: #78787866; }
 
 .backLayer {
   height: 370px;
@@ -596,32 +596,39 @@
     color: #e3d194;
     text-transform: capitalize; }
 
-#andrewBio,
-#daveMod,
+#andrewBio {
+  background: linear-gradient(to right, #30303078, #3030306d), url(../img/chef2.jpg);
+  background-size: cover;
+  background-position: center; }
+
+#daveMod {
+  background: linear-gradient(to right, #30303078, #3030306d), url(../img/stock1.jpeg);
+  background-size: cover;
+  background-position: center; }
+
 #carieBio {
+  background: linear-gradient(to right, #30303078, #3030306d), url(../img/stock2.jpeg);
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden; }
+
+.GlobalBio {
   height: 500px;
   width: 800px;
-  background-image: url(..img/chef2jpg);
-  border: 4px solid #d3c186;
   border-radius: 3px;
   box-shadow: 10px 10px 40px #3c3c3c5a;
+  border: 2px solid #d3c186;
   margin-top: 100px;
   margin-left: 300px; }
   @media only screen and (max-width: 1024px) {
-    #andrewBio,
-    #daveMod,
-    #carieBio {
+    .GlobalBio {
       margin-left: 100px; } }
   @media only screen and (max-width: 768px) {
-    #andrewBio,
-    #daveMod,
-    #carieBio {
+    .GlobalBio {
       width: 600px;
       margin-left: 80px; } }
   @media only screen and (max-width: 425px) {
-    #andrewBio,
-    #daveMod,
-    #carieBio {
+    .GlobalBio {
       width: 300px;
       margin-left: 50px; } }
 
@@ -642,25 +649,14 @@
       padding-top: 8px;
       padding-left: 10px; } }
 
-.bioThumbnail img {
-  height: 300px;
-  width: 100%;
-  border-radius: 4px; }
-  @media only screen and (max-width: 768px) {
-    .bioThumbnail img {
-      width: 350px;
-      margin-left: 120px; } }
-  @media only screen and (max-width: 425px) {
-    .bioThumbnail img {
-      width: 250px;
-      margin-left: 26px; } }
-
 .bioTitle {
-  text-align: center; }
+  text-align: left;
+  margin-top: 190px;
+  margin-left: 60px; }
   .bioTitle .bioName {
     font-size: 30px;
     font-weight: lighter;
-    color: "arial";
+    color: #fff;
     text-transform: capitalize; }
   .bioTitle .profession {
     font-family: "Allura", cursive;
@@ -669,10 +665,12 @@
     text-transform: capitalize;
     color: #e3d194; }
   .bioTitle .professionDesc {
+    font-family: "arial";
     font-size: 18px;
     font-weight: lighter;
-    width: 506px;
-    margin-left: 146px; }
+    width: 700px;
+    color: #fff;
+    line-height: 28px; }
     @media only screen and (max-width: 768px) {
       .bioTitle .professionDesc {
         width: 450px;
@@ -682,8 +680,13 @@
         width: 260px;
         font-size: 14px;
         margin-top: 10px;
-        margin-left: 20px;
-        text-align: center; } }
+        margin-left: 10px;
+        text-align: left;
+        line-height: 22px; } }
+  @media only screen and (max-width: 425px) {
+    .bioTitle {
+      margin-top: 120px;
+      margin-left: 10px; } }
 
 .testContain {
   background: linear-gradient(to right, #30303078, #3030306d), url(../img/post1.jpg);
@@ -748,7 +751,8 @@
   width: 100%; }
 
 .menuDiscovery {
-  margin-top: 100px; }
+  margin-top: 100px;
+  margin-bottom: -130px; }
   .menuDiscovery h3 {
     font-family: "Allura", cursive;
     font-size: 26px;
@@ -1202,7 +1206,7 @@
   max-width: 100%; }
 
 body {
-  background-color: #e9e9e9; }
+  background-color: #fcfcfc; }
 
 .pageIndex {
   margin-top: 40px;

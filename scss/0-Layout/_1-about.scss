@@ -189,8 +189,8 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #787878;
+  background-color: #78787866;
 }
 .backLayer {
   height: 370px;
@@ -225,18 +225,25 @@
     text-transform: capitalize;
   }
 }
-//Chef Bio
-#andrewBio,
-#daveMod,
+//Individual chef Background
+#andrewBio {
+  @include Background(url(../img/chef2.jpg));
+}
+#daveMod {
+  @include Background(url(../img/stock1.jpeg));
+}
 #carieBio {
-  background-image: url(chef2.jpg);
-  background-size: cover;
-  background-position: center;
+  @include Background(url(../img/stock2.jpeg));
+  overflow-x: hidden;
+}
+//Global Chef Bio
+.GlobalBio {
   height: 500px;
   width: 800px;
-  border: 4px solid $secGold;
+  // border: 4px solid $secGold;
   border-radius: 3px;
   box-shadow: 10px 10px 40px #3c3c3c5a;
+  border: 2px solid $secGold;
   margin-top: 100px;
   margin-left: 300px;
   //Responsive
@@ -272,30 +279,32 @@
     padding-left: 10px;
   }
 }
-.bioThumbnail {
-  img {
-    height: 300px;
-    width: 100%;
-    // margin-top: -20px;
-    // margin-left: 200px;
-    border-radius: 4px;
-    //Responsive
-    @include Tablet {
-      width: 350px;
-      margin-left: 120px;
-    }
-    @include Mobile {
-      width: 250px;
-      margin-left: 26px;
-    }
-  }
-}
+// .bioThumbnail {
+//   img {
+//     height: 300px;
+//     width: 100%;
+//     // margin-top: -20px;
+//     // margin-left: 200px;
+//     border-radius: 4px;
+//     //Responsive
+//     @include Tablet {
+//       width: 350px;
+//       margin-left: 120px;
+//     }
+//     @include Mobile {
+//       width: 250px;
+//       margin-left: 26px;
+//     }
+//   }
+// }
 .bioTitle {
-  text-align: center;
+  text-align: left;
+  margin-top: 190px;
+  margin-left: 60px;
   .bioName {
     font-size: 30px;
     font-weight: lighter;
-    color: $primary-font;
+    color: #fff;
     text-transform: capitalize;
   }
   .profession {
@@ -306,10 +315,12 @@
     color: $primaryGold;
   }
   .professionDesc {
+    font-family: $primary-font;
     font-size: 18px;
     font-weight: lighter;
-    width: 506px;
-    margin-left: 146px;
+    width: 700px;
+    color: #fff;
+    line-height: 28px;
     //Responsive
     @include Tablet {
       width: 450px;
@@ -319,9 +330,15 @@
       width: 260px;
       font-size: 14px;
       margin-top: 10px;
-      margin-left: 20px;
-      text-align: center;
+      margin-left: 10px;
+      text-align: left;
+      line-height: 22px;
     }
+  }
+  //Responsive
+  @include Mobile {
+    margin-top: 120px;
+    margin-left: 10px;
   }
 }
 .testContain {
