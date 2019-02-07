@@ -16,33 +16,27 @@ function validateForm() {
   }
   return true;
 }
+//Menu Card Flip
+let Card = document.querySelector(".menuCard");
+let playing = false;
 
-// let navOpen = document.querySelector("#openNav");
-// let closeNav = document.getElementById("hideIcon");
-// let menu = document.querySelector(".homeMenu");
-// window.onload
+Card.addEventListener("click", flipped);
+function flipped() {
+  if (this.playing) return;
+  playing = true;
+  anime({
+    targets: ".menuCard",
+    scale: [{ value: 1 }, { value: 1.1 }, { value: 1, delay: 250 }],
+    rotateY: { value: "+=180", delay: 200 },
+    easing: "easeInOutSine",
+    duration: 400,
+    complete: function(anim) {
+      playing = false;
+    }
+  });
+}
 
-// if(navOpen){
-//   navOpen.addEventListener ("click", viewNav);
-// }
-// if(closeNav){
-//   closeNav.addEventListener ("click", exitNav);
-// }
-
-// function viewNav(){
-//   if (menu.style.display = "none"){
-//     menu.style.display = "flex";
-//     menu.style.opacity = "1";
-//     navOpen.style.display = "none";
-//   }return false;
-// }
-
-// function exitNav(){
-//   menu.style.display = "none";
-//   openNav.style.display = "flex";
-// }
-//About Us page
-// Mouse Over To show Chefs Mini Bio
+// About Page Mouse Over To show Chefs Mini Bio
 let andrew = document.getElementById("drew");
 let dave = document.getElementById("dave");
 let carie = document.getElementById("carie");

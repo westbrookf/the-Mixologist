@@ -312,6 +312,7 @@
   height: 600px;
   width: 330px;
   background-color: transparent;
+  transform: rotateY(180deg);
   //Responsive
   @include Mobile {
     padding-top: 20px;
@@ -322,25 +323,11 @@
   width: 100%;
   height: 100%;
   text-align: left;
-  transform-style: preserve-3d;
-  transition: 0.7s;
   border: 2px solid $secGold;
-}
-.menuCard:hover {
-  zoom: 1.1;
-  .innerCard {
-    transform: rotateY(180deg);
-    box-shadow: 2px 2px 8px #303030;
-  }
-}
-.frntCard,
-.bckCard {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+  box-shadow: 2px 2px 8px #303030;
 }
 .frntCard {
+  @include cardPosition();
   background-color: $secGold;
   color: black;
   z-index: 2;
@@ -349,6 +336,7 @@
   }
 }
 .bckCard {
+  @include cardPosition();
   background-color: #fff;
   color: $secGold;
   transform: rotateY(180deg);
